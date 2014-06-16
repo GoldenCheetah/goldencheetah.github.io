@@ -1,0 +1,203 @@
+
+/*===========================
+  --- Header & menu ----
+=========================== */
+.navbar {
+	line-height: 100px;
+	height: 100px;
+	background-color: rgba(201,94,12,0.3);
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.navbar .navbar-collapse {
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav li {
+	height: 100%;
+	line-height: 100%;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav>li>a {
+	display: table-cell;
+	height: 100%;
+	line-height: 100%;
+	vertical-align: middle;
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.nav>li>a:hover {
+	color: #FFE35B;
+	background: none;
+}
+
+.navbar-nav {
+	float: right;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.navbar .navbar-nav > .active > a {
+	color: #ff0;
+}
+.navbar .navbar-nav > .active > a {
+	padding-bottom: 22px;
+}
+
+h1 a.navbar-brand {
+    padding-top: 0px;
+    margin-top: -10px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 900;
+	text-shadow: none;
+}
+
+.navbar-brand {
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.navbar-brand img {
+	vertical-align: middle;
+}
+
+.navbar-toggle {
+	padding: 0;
+	margin: 0;
+	width: 80px;
+}
+
+.navbar-collapse.in {
+	margin-top: -5px !important;
+}
+
+footer {
+	line-height: 50px;
+	height: 50px;
+	background-color: #000;
+	display: block;
+	vertical-align: middle;
+	text-align: left;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+/*===========================
+  --- Sections ----
+=========================== */
+
+section.section {
+	margin:0;
+	padding: 40px 0 0 0;
+}
+
+.jumbotron {
+  min-height:580px;
+  margin-bottom: 0px;
+}
+
+#section-download {
+    min-height:600px;
+	background-color: #eee;
+}
+
+#section-contributor {
+    min-height:600px;
+	color: #000;
+	background-color: rgba(201,94,12,0.3);
+}
+
+#section-more {
+    min-height:600px;
+	color: #000;
+	background-color: rgba(100,100,100,0.3);
+}
+
+/* Tooltp */
+.tooltip-inner {
+    max-width: 400px;
+
+}
+
+.simplebox {
+    color: #fff;
+    background-color: #A15734;
+    border-color: #bce8f1;
+    border-radius: 10px;
+}
+
+.simplebox a {
+    color: #FFE35B;
+}
+
+
+/* ==========================
+ --- Parallax ---
+============================= */
+
+
+#parallax1{
+	color: #000;
+	background-image: url(../img/parallax01.jpg);
+	padding-top: 20px;
+	padding-bottom:40px;
+	position:relative;
+}
+
+#parallax2{
+	color: #000;
+	background-image: url(../img/parallax02.jpg);
+	padding-top: 20px;
+	padding-bottom:40px;
+	position:relative;
+}
+
+#parallax3{
+	color: #000;
+	background-image: url(../img/parallax03.jpg);
+	padding-top: 20px;
+	padding-bottom:40px;
+	position:relative;
+}
+
+.box {
+    position:absolute;
+    left:0;
+    height:100%;
+    background:#09f;
+}
+
+/* Move down content because we have an inital navbar that is 100px tall */
+body {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+/* buttons */
+.btn {
+	border: 1;
+	background-color: #A15734;
+	border-color: #723E27;
+}
+
+.btn:hover {
+	border: 2;
+	background-color: #C55A0A;
+	border-color: #723E27;
+}
+
+
