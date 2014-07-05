@@ -110,10 +110,29 @@ section.section {
   margin-bottom: 0px;
 }
 
+section .row {
+	padding: 0 0 60px 0;
+}
+
 #section-download {
     min-height:600px;
 	background-color: #eee;
 }
+
+#section-features {
+    min-height:600px;
+	color: #fff;
+	background-color: #333;
+}
+
+#section-features h2 {
+	color: #0ff;
+}
+
+#section-features h3 {
+	color: #0ff;
+}
+
 
 #section-contributor {
     min-height:600px;
