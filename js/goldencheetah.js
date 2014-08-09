@@ -32,8 +32,8 @@
 	
 
 	// local scroll
-	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
-        jQuery('.jumbotron').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
+	//jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
+    jQuery('.jumbotron').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
 
 	
 	
@@ -58,7 +58,7 @@
 						return 1-p;
 					}
 				}
-			});	
+			});
 	}
 
 
@@ -68,7 +68,20 @@
 	jQuery(".appear").on("appear", function(data) {
 			var id = $(this).attr("id");
 			jQuery('.nav li').removeClass('active');
-			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");	
+			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");
+            
+            if (id == "section-download") {
+                //jQuery(".navbar").addClass("screenshots");
+                //jQuery(".navbar").css('background-color','red');
+                //jQuery("section-download").css('background-color','red');
+
+            }
+            else {
+                //jQuery(".navbar").removeClass("screenshots");
+
+                //if (jQuery(".navbar").css('background-color') == 'rgb(255, 0, 0)')
+                //   jQuery(".navbar").css('background-color','black');
+            }
 		});
 
 
