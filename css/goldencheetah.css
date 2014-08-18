@@ -120,12 +120,12 @@ section .row {
 
 #section-home {
     min-height:600px;
-	background-color: #eee;
+	background-color: #ddd;
     color: #fff;
 }
 
 .jumbotron {
-    background-color: #eee;
+    background-color: #ddd;
     color: #000;
     min-height:580px;
     margin-bottom: 0px;
@@ -183,8 +183,8 @@ section .row {
 
 #section-screenshots {
     min-height:600px;
-	color: #000;
-	background-color: #eee;
+	color: #fff;
+	background-color: #555;
 }
 
 #section-screenshots h1 {
@@ -203,9 +203,9 @@ section .row {
 }
 
 #section-more {
-    min-height:600px;
+    min-height:100px;
 	color: #000;
-	background-color: rgba(100,100,100,0.3);
+	background-color: #ddd;
 }
 
 /* Tooltp */
@@ -232,6 +232,7 @@ section .row {
 
 
 #parallax1{
+    min-height:300px;
 	color: #000;
     background-color: #f5a503;
 	/*background-image: url(../img/parallax01.jpg);*/
@@ -245,6 +246,7 @@ section .row {
 }
 
 #parallax2{
+    min-height:300px;
 	color: #000;
     background-color: #0ff; /* #ff3588 */
 	/*background-image: url(../img/parallax02.jpg);*/
@@ -254,6 +256,7 @@ section .row {
 }
 
 #parallax3{
+    min-height:300px;
 	color: #000;
     background-color: #aeee00;
 	/*background-image: url(../img/parallax03.jpg);*/
@@ -263,6 +266,7 @@ section .row {
 }
 
 #parallax4{
+    min-height:300px;
 	color: #000;
     background-color: #ff3588;
 	/*background-image: url(../img/parallax03.jpg);*/
@@ -280,6 +284,7 @@ section .row {
 
 /* Move down content because we have an inital navbar that is 100px tall */
 body {
+  background-color: #000;
   padding-top: 100px;
   padding-bottom: 20px;
 }
