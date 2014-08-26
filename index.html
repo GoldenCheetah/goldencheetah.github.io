@@ -1,880 +1,1253 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>GoldenCheetah</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>GoldenCheetah</title>
                     
-                    <!-- Bootstrap -->
-                    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
                         
-                        <!-- Lightbox -->
-                        <link href="css/lightbox.css" rel="stylesheet">
-                            <link href="css/ekko-lightbox.css rel="stylesheet">
+        <!-- Lightbox -->
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href="css/ekko-lightbox.css rel="stylesheet">
                                 
-                                <!-- Custom styles for this template -->
-                                <link href="css/goldencheetah.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/goldencheetah.css" rel="stylesheet">
                                 
-                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-                                <!--[if lt IE 9]>
-                                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-                                <![endif]-->
-                                </head>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
                                 
-                                <body>
-                                
-                                <section id="header"></section>
-                                <div class="navbar navbar-fixed-top screenshots" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(161,87,52,1);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
-                                <div class="container">
-                                <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="fa fa-bars color-white"></span>
-                                </button>
-                                
-                                <h1><a class="navbar-brand" href="#top" data-0="line-height:90px;" data-300="line-height:50px;" title="test">GoldenCheetah</a></h1>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-                                <!--<li class="active"><a href="#section-home">Home</a></li>-->
-                                <li><a href="#section-download">Download</a></li>
-                                <li><a href="#section-features">Features</a></li>
-                                <li><a href="#section-screenshots">Screenshots</a></li>
-                                <li><a href="#section-contributor">Contributors</a></li>
-                                <li><a href="#section-more">More</a></li>
-                                </ul>
-                                </div><!--/.navbar-collapse -->
-                                </div>
-                                </div>
-                                
-                                
-                                <!-- Main jumbotron for a primary marketing message or call to action -->
-                                <section id="section-home" class="appear clearfix"/>
-                                <div class="jumbotron">
-                                <div class="container">
-                                <h1>GoldenCheetah</h1>
-                                <div class="col-md-5">
-                                <img src="img/logo.png" width="300" height="300" />
-                                </div>
-                                
-                                <ul>
-                                <li>Downloads or Imports ride data directly from many <a href="#" data-toggle="tooltip" title="<b>Garmin</b> (500, 510, 800, 810,...)<br><b>SRM</b> (PowerControl V, VI and VII)<br><b>PowerTap</b> (Cervo &amp; Joule (1.0, 2.0, GPS)<br><b>O_Synce</b> (Macro, Navi2coach)">devices</a></li><!-- (Garmin, SRM PowerControl, PowerTap Cervo &amp; Joule, O Synce Navi2coach,...)-->
-                                
-                                <li>Imports ride data downloaded with other <a href="#" data-toggle="tooltip" title="<b>TrainingPeaks WKO+</b><br>manufacturers' software (SRM, Powertap, IBike, Ergomo, Polar)<br>">programs</a></li><!-- including TrainingPeaks WKO+ and the manufacturers' software for the Ergomo, Garmin, Polar, PowerTap, and SRM devices.-->
-                                
-                                <li>Provides a rich set of analysis <a href="#" data-toggle="tooltip" title="Critical Power graph<br>BikeScore calculation<br>Pedal force versus pedal velocity<BR>...">tools</a></li><!-- including a critical power graph, BikeScore calculation, histogram analysis, a best interval finder, and a pedal force versus pedal velocity chart, to name just a few.-->
-                                
-                                <li>Is available for Linux, Mac OS X, and Windows.</li>
-                                <li>Is released under an Open Source license.</li>
-                                </ul>
-                                <br>
-                                <h4 class="text-warning">We believe that cyclists should be able to download their power data to the computer of their choice, analyze it in whatever way they see fit, and share their methods of analysis with others.</h4>
-                                <br>
-                                <p><a id="btn-download" href="#section-download" class="btn btn-primary btn-lg" role="button">Download</a></p>
-                                </div>
-                                </div>
-                                </section>
-                                
-                                <!-- spacer section:testimonial -->
-                                <section id="parallax1" class="section" data-stellar-background-ratio="0.5">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="align-center">
-                                                    <div class="testimonial clearfix" >
-                                                        <br/>
-                                                        <h3>
-                                                            To all those volunteers who selflessly give their time and without whom amateur sport would not exist.
-                                                        </h3>
-                                                        <br/>
-                                                        <span class="author">&mdash; Graeme Obree, in the dedication of <i>Flying Scotsman</i></span>
-                                                        <br/>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                
-                                
-                                
-                                <section id="section-download" class="section appear clearfix">
-                                    <div class="container">
-                                        <h1>Download</h1>
-                                        <div class="col-md-3" >
-                                            <h3>Release 3.1</h3>
-                                            <img src="img/logo.png" width="180" height="180" />
-                                        </div>
-                                        
-                                        <!--<p>
-                                         Golden Cheetah is available in binary form for
-                                         Fedora (RPMs), Mac OS X (Universal Intel binary), and Windows.
-                                         It is also available as source code.
-                                         </p>-->
-                                        
-                                        <div class="col-md-9" >
-                                            <BR>
-                                            <p>We are proud to announce that GoldenCheetah v3.1 was released.<br>
-                                            Installation is simple. Download the file for your operating system.
-                                            <BR>
-                                            You can also <a href="release-notes.html">view the release notes</a> for 3.1
-                                            </p>
-                                            
-                                            <div class="col-md-9 alert simplebox">
-                                                <div class="col-md-6">
-                                                    Windows <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah_32bit_3.1.0_Windows_Installer.exe" data-toggle="tooltip" title="For Windows, run the Installer and follow the prompts.">32-bit</a>
-                                                    /
-                                                    <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah_64bit_3.1.0_Windows_Installer.exe" data-toggle="tooltip" title="For Windows, run the Installer and follow the prompts.">64-bit</a>
-                                                    <br/>
-                                                    Mac OS X (10.6+) <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-Uni-3.1.0-QT4.dmg" data-toggle="tooltip" title="On Mac, open the DMG and drag and drop where you would like to install.">Universal</a>
-                                                    /
-                                                    <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-64bit-3.1.0-QT5.dmg" data-toggle="tooltip" title="On Mac, open the DMG and drag and drop where you would like to install."> 64bit</a>
-                                                    <br/>
-                                                    
-                                                    
-                                                </div>
-                                                
-                                                <div class="col-md-5">
-                                                    Fedora 18 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc18.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
-                                                    / <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc18.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
-                                                    <br/>
-                                                    Fedora 19 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc19.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
-                                                    / <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc19.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
-                                                    <br/>
-                                                    Fedora 20 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc20.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
-                                                    / <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc20.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
-                                                    
-                                                    
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-md-8" >
-                                                You can <a href="older-releases.html">download older releases</a> of Golden Cheetah.
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <!--<div class="col-md-8 alert alert-info">
-                                         <p>
-                                         <ul>
-                                         <li>On Mac, open the DMG and drag and drop where you would like to install.</li>
-                                         <li>For Windows, run the Installer and follow the prompts.</li>
-                                         <li>For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).</li>
-                                         </ul>
-                                         </p>
-                                         </diV>-->
-                                        
-                                        <div class="col-md-12">
-                                            <p>
-                                            There is a <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Main-Page_Users-Guide">User guide</a>
-                                            and a <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/FAQ">FAQ</a> that
-                                            you can use to help you use the program.
-                                            </p>
-                                            <p>
-                                            Golden Cheetah downloads data from all versions of the PowerTap
-                                            computer including the new Joule GPS. Previously you needed to have the
-                                            FTDI USB Drivers installed if you were using the PowerTap USB cradle
-                                            (as opposed to the older, serial cable). This should not be necessary.
-                                            If you are having problems then you can manually install the
-                                            <a href="http://www.ftdichip.com/Drivers/D2XX.htm">FTDI USB driver</a>.
-                                            </p>
-                                            
-                                            <p>
-                                            On Windows, Linux and Mac OS X, Golden Cheetah also downloads from the SRM PCV.  On Mac
-                                            OS X, you'll need to install <a href="http://osx-pl2303.sourceforge.net/">the
-                                                open source PL2303 driver</a> to download from an SRM. Please see the
-                                            <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Installing-the-d2xx-drivers-on-mac-os">WIKI</a> article
-                                            - <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Pcv-on-mac-os-x">
-                                                PCV on Mac OS X</a> for further information.
-                                            </p>
-                                            
-                                            <p>
-                                            There is the older Version 2.1.0  <a href="/users-guide.html">User's Guide</a> on how to install
-                                            and use Golden Cheetah that can assist also.
-                                            </p>
-                                            
-                                            
-                                            <h3>Development Releases</h3>
-                                            
-                                            
-                                            <p>Gareth Coco has also made
-                                            <a href="http://goldencheetah.stand2surf.net/">regular development builds</a>
-                                            available.  These binaries are based on the latest source code, so they may have
-                                            more features and less (but sometime more) bugs than the stable release above.
-                                            </p>
-                                            
-                                            <h3>Source Code</h3>
-                                            
-                                            <p>
-                                            The Golden Cheetah source code is available via git.  See the
-                                            <a href="developers-guide.html">Developer's Guide</a> for more information.
-                                            You can also <a href="http://github.com/GoldenCheetah/GoldenCheetah/tree/master/">browse
-                                                the source on github</a>.
-                                            </p>
-                                            <br>
-                                            <br>
-                                        </div>
-                                        
-                                    </div>
-                                    </div>
-                                </section>
-                                
-                                <section id="parallax2" class="section" data-stellar-background-ratio="0.5">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="align-center">
-                                                    <div class="testimonial clearfix" >
-                                                        <!--<br/>
-                                                         <h3>
-                                                         To all those volunteers who selflessly give their time and without whom amateur sport would not exist.
-                                                         </h3>
-                                                         <br/>
-                                                         <span class="author">&mdash; Graeme Obree, in the dedication of <i>Flying Scotsman</i></span>
-                                                         <br/>-->
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                
-                                <section id="section-features" class="section appear clearfix featured">
-                                    <div class="container">
-                                        <!-- Example row of columns -->
-                                        <div class="row">
-                                            <h1>Features</h1>
-                                            <div class="col-md-6">
-                                                <h3>Import all popular file formats</h3>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            TrainingPeaks (WKO, PWX)
-                                                        </li>
-                                                        <li>
-                                                            PowerTap (RAW, CSV)
-                                                        </li>
-                                                        <li>
-                                                            ANT+ (FIT)
-                                                        </li>
-                                                        <li>
-                                                            SportTracks (FITLOG)
-                                                        </li>
-                                                        <li>
-                                                            Sigma (SLF, SMF)
-                                                        </li>
-                                                        <li>
-                                                            Ergomo (CSV)
-                                                        </li>
-                                                        <li>
-                                                            Google Earth (KML)
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Garmin (TCX, GPX)
-                                                        </li>
-                                                        <li>
-                                                            Polar (HRM)
-                                                        </li>
-                                                        <li>
-                                                            SRMWin  (SRM)
-                                                        </li>
-                                                        <li>
-                                                            Computrainer (TXT)
-                                                        </li>
-                                                        <li>
-                                                            iBike (CSV)
-                                                        </li>
-                                                        <li>
-                                                            MotoACTV (CSV)
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                
-                                                <img src="img/devices.png" width="500" />
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Cloud Integration</h3>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            TrainingPeaks
-                                                        </li>
-                                                        <li>
-                                                            Strava
-                                                        </li>
-                                                        <li>
-                                                            TrainingStageBuch
-                                                        </li>
-                                                        <li>
-                                                            Ride With GPS
-                                                        </li>
-                                                        <li>
-                                                            Cycling Analytics
-                                                        </li>
-                                                        <li>
-                                                            Selfloops
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Withings Weight
-                                                        </li>
-                                                        <li>
-                                                            Zeo Sleep
-                                                        </li>
-                                                        <li>
-                                                            Google Calendar
-                                                        </li>
-                                                        <li>
-                                                            Twitter
-                                                        </li>
-                                                        <li>
-                                                            ErgDB
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Download directly</h3>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            SRM PowerControl 5/6/7
-                                                        </li>
-                                                        <li>
-                                                            PowerTap Cervo
-                                                        </li>
-                                                        <li>
-                                                            O Synce Macro
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            CycleOps Joule
-                                                        </li>
-                                                        <li>
-                                                            Moxy Monitor (vo2)
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <h3>Forensic Ride Analysis</h3>
-                                                <p>Multiple charts to examine and analyse ride and interval  data including:</p>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Summary, Metadata
-                                                        </li>
-                                                        <li>
-                                                            Ride Plot
-                                                        </li>
-                                                        <li>
-                                                            Stress Plot
-                                                        </li>
-                                                        <li>
-                                                            Pedal Force/Velocity
-                                                        </li>
-                                                        <li>
-                                                            Histogram
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            2d and 3d scatter
-                                                        </li>
-                                                        <li>
-                                                            HR v Power
-                                                        </li>
-                                                        <li>
-                                                            Map (Google / Bing)
-                                                        </li>
-                                                        <li>
-                                                            Aerolab
-                                                        </li>
-                                                        <li>
-                                                            Critical Power (PD)
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Edit, Search and Export Data</h3>
-                                                <ul>
-                                                    <li>
-                                                        Advanced data editor with undo, redo
-                                                    </li>
-                                                    <li>
-                                                        Automatic anomaly detection
-                                                    </li>
-                                                    <li>
-                                                        Fix tools for GPS, Spikes, Torque
-                                                    </li>
-                                                    <li>
-                                                        Advanced interval find, free-text search, data filters and search for values
-                                                    </li>
-                                                    <li>
-                                                        Export data to other applications and formats including; PWX, CSV, KML, TCX and JSON
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <a href="img/Wprime.png" data-toggle="lightbox" data-title="W’bal Stress Chart" data-lightbox="Ride Analysis">
-                                                    <img src="img/Wprime.png" class="img-responsive"/>
-                                                </a>
-                                                <center class="small">W’<sub>bal</sub> Stress Chart</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/CPchart.png" data-toggle="lightbox" data-title="Critical Power Chart" data-lightbox="Ride Analysis">
-                                                    <img src="img/CPchart.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Critical Power Chart</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/RidePlot.png" data-toggle="lightbox" data-title="Ride Plot" data-lightbox="Ride Analysis">
-                                                    <img src="img/RidePlot.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Ride Plot</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/RideSummary.png" data-toggle="lightbox" data-title="Ride Summary" data-lightbox="Ride Analysis">
-                                                    <img src="img/RideSummary.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Ride Summary</center>
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <h3>Track performance and Trends</h3>
-                                                <p>Track performance and physiological markers for over 130 metrics, user-definable best durations, model estimates:</p>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Personal Bests
-                                                        </li>
-                                                        <li>
-                                                            Time In Zone
-                                                        </li>
-                                                        <li>
-                                                            Power Peaks
-                                                        </li>
-                                                        <li>
-                                                            CP, W’, P-Max
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Apply data filters
-                                                        </li>
-                                                        <li>
-                                                            Performance Manager
-                                                        </li>
-                                                        <li>
-                                                            Ae/An TISS Stress
-                                                        </li>
-                                                        <li>
-                                                            Power Distribution
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Compare Seasons, Rides, Intervals and Athletes</h3>
-                                                <ul>
-                                                    <li>
-                                                        Intuitive drag-and-drop interface
-                                                    </li>
-                                                    <li>
-                                                        Supports most important charts; Critical Power, Ride, Histogram, Trends and more
-                                                    </li>
-                                                    <li>
-                                                        CP also supports Delta and Percentage comparisons to a baseline season
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <a href="img/TISS.png" data-toggle="lightbox" data-title="An/Ae TISS Stress Chart" data-lightbox="Trends">
-                                                    <img src="img/TISS.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">An/Ae TISS Stress Chart</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/CPdelta.png" data-toggle="lightbox" data-title="Critical Power Delta Compare" data-lightbox="Trends">
-                                                    <img src="img/CPdelta.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Critical Power Delta Compare</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/ModelEstimate.png" data-toggle="lightbox" data-title="Model Estimates" data-lightbox="Trends">
-                                                    <img src="img/ModelEstimate.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Model Estimates</center>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/PeakPower.png" data-toggle="lightbox" data-title="Peak Power" data-lightbox="Trends">
-                                                    <img src="img/PeakPower.png" class="img-responsive" />
-                                                </a>
-                                                <center class="small">Peak Power</center>
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <h3>Ride Indoors</h3>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Any ANT+ Power Meter
-                                                        </li>
-                                                        <li>
-                                                            Racermate Computrainer
-                                                        </li>
-                                                        <li>
-                                                            Tacx Fortius
-                                                        </li>
-                                                        <li>
-                                                            Virtual Power
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Video Playback
-                                                        </li>
-                                                        <li>
-                                                            Google Streetview
-                                                        </li>
-                                                        <li>
-                                                            Realtime Plot
-                                                        </li>
-                                                        <li>
-                                                            Pre-programmed Workouts (erg, crs, pgmf)
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Fully Customisable UI</h3>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            User defined charts
-                                                        </li>
-                                                        <li>
-                                                            Flexible Screen Layouts
-                                                        </li>
-                                                        <li>
-                                                            Themes and Color Setup
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul>
-                                                        <li>
-                                                            Summary Metrics and parameters
-                                                        </li>
-                                                        <li>
-                                                            Native look and feel for Linux, Mac and Windows XP to 8.1
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <a href="img/RideIndoor1.png" data-toggle="lightbox" data-title="Ride Indoor" data-lightbox="RideIndoor">
-                                                    <img src="img/RideIndoor1.png" class="img-responsive" />
-                                                </a>
-                                                <!-- <center class="small">Ride Indoor</center>-->
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/RideIndoor2.png" data-toggle="lightbox" data-title="Ride Indoor" data-lightbox="RideIndoor">
-                                                    <img src="img/RideIndoor2.png" class="img-responsive" />
-                                                </a>
-                                                <!-- <center class="small">Ride Indoor</center>-->
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/Customise.png" data-toggle="lightbox" data-title="Customise" data-lightbox="UI">
-                                                    <img src="img/Customise.png" class="img-responsive" />
-                                                </a>
-                                                <!--<center class="small">Customise</center>-->
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="img/About.png" data-toggle="lightbox" data-title="About" data-lightbox="UI">
-                                                    <img src="img/About.png" class="img-responsive" />
-                                                </a>
-                                                <!--<center class="small">About</center>-->
-                                            </div>
-                                        </div> <!-- row -->
-                                        
-                                    </div> <!-- container -->
-                                </section>
-                                
-                                <section id="parallax3" class="section" data-stellar-background-ratio="0.5">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="align-center">
-                                                    <div class="testimonial clearfix" >
-                                                        <!--<br/>
-                                                         <h3>
-                                                         To all those volunteers who selflessly give their time and without whom amateur sport would not exist.
-                                                         </h3>
-                                                         <br/>
-                                                         <span class="author">&mdash; Graeme Obree, in the dedication of <i>Flying Scotsman</i></span>
-                                                         <br/>-->
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                
-                                <section id="section-screenshots" class="section appear clearfix featured">
-                                    <div class="container">
-                                        <!-- Example row of columns -->
-                                        <div class="row">
-                                            <h1>Videos/Screenshots</h1>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="http://vimeo.com/99817526" id="vimeo1" data-remote="http://player.vimeo.com/video/99817526" data-toggle="ekkoLightbox" data-width="800" data-title="What's New in GoldenCheetah Version 3.1"><img src="img/NewGC31_video.png" class="img-responsive"/></a><BR>
-                                                <center>What's New in GoldenCheetah 3.1</center><BR>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="http://vimeo.com/100244204" id="vimeo2" data-remote="http://player.vimeo.com/video/100244204" data-toggle="ekkoLightbox" data-width="800" data-title="The Critical Power Chart"><img src="img/CPChart_video.png" class="img-responsive"/></a><BR>
-                                                <center>The Critical Power Chart</center><BR>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="http://vimeo.com/100599100" id="vimeo3" data-remote="http://player.vimeo.com/video/100599100" data-toggle="ekkoLightbox" data-width="800" data-title="W'bal"><img src="img/WprimeBal_video.png" class="img-responsive"/></a><BR>
-                                                <center>W'bal</center><BR>
-                                            </div>
-                                            
-                                            <div class="col-md-3">
-                                                <a href="http://vimeo.com/101867214" id="vimeo4" data-remote="http://player.vimeo.com/video/101867214" data-toggle="ekkoLightbox" data-width="800" data-title="Metric Trends Chart"><img src="img/MetricTrendsChart_video.png" class="img-responsive"/></a><BR>
-                                                <center>Metric Trends Chart</center><BR>
-                                            </div>
-                                            
-                                            
-                                            
-                                            <!--<iframe src="http://player.vimeo.com/video/99817526" width="500" height="279" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/99817526">What's New in GoldenCheetah Version 3.1</a> from <a href="http://vimeo.com/user3992403">mark liversedge</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
-                                            
-                                            
-                                            
-                                        </div>
-                                        </section>
-                                
-                                
-                                <section id="parallax4" class="section" data-stellar-background-ratio="0.5">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="align-center">
-                                                    <div class="testimonial clearfix" >
-                                                        <!--<br/>
-                                                         <h3>
-                                                         To all those volunteers who selflessly give their time and without whom amateur sport would not exist.
-                                                         </h3>
-                                                         <br/>
-                                                         <span class="author">&mdash; Graeme Obree, in the dedication of <i>Flying Scotsman</i></span>
-                                                         <br/>-->
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                
-                                <section id="section-contributor" class="section appear clearfix">
-                                    
-                                    <div class="container">
-                                        <h1>Contributors</h1>
-                                        
-                                        <p>Sean Rhea bought a PowerTap Pro on April 20, 2006 and immediately set
-                                        to figuring out how to use it from his Mac without using Virtual PC.
-                                        With help from Russ Cox and David Easter, he wrote two command-line
-                                        programs for downloading data from a PowerTap and interpreting that
-                                        data.  Sean released these two tools, <code>ptdl</code> and
-                                        <code>ptunpk</code>, on May 4, 2006.</p>
-                                        
-                                        <p>Later that year, Sean needed to learn QT for his real job, and he set
-                                        about writing a graphical version of his software for practice.  He
-                                        released the first graphical version on September 6, 2006, changing the
-                                        name to GoldenCheetah in reference to an old legend from his days as a
-                                        runner.</p>
-                                        
-                                        <p>Since then, a large community has contributed additional code and
-                                        other support, including:</p>
-                                        
-                                        <p><br></p>
-                                        
-                                        
-                                        <div class="col-md-3">
-                                            <ul>
-                                                <li>Alejandro Martinez</li>
-                                                <li>Andrew Bryson</li>
-                                                <li>Andy Froncioni</li>
-                                                <li>Austin Roach</li>
-                                                <li>Berend De Schouwer</li>
-                                                <li>Bruno Assis</li>
-                                                <li>Chris Cleeland</li>
-                                                <li>Christian Charete</li>
-                                                <li>Claus Assmann</li>
-                                                <li>Dag Gruneau</li>
-                                                <li>Damien Grauser</li>
-                                                <li>Darren Hague</li>
-                                                <li>Dave Waterworth</li>
-                                                <li>Dean Junk</li>
-                                                
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <ul>
-                                                <li>Eric Brandt</li>
-                                                <li>Eric Murray</li>
-                                                <li>Frank Zschockelt</li>
-                                                <li>Gareth Coco</li>
-                                                <li>Greg Lonnon</li>
-                                                <li>Ilja Booij</li>
-                                                <li>Jaime Jofre</li>
-                                                <li>Jamie Kimberley</li>
-                                                <li>Jim Ley</li>
-                                                <li>J&#246;rn Rischm&#252;ller</li>
-                                                <li>John Ehrlinger</li>
-                                                <li>Jon Beverley</li>
-                                                <li>Jon Escombe</li>
-                                                <li>Josef Gebel</li>
-                                            </ul>
-                                        </div>
-                                        <ul class="col-md-3">
-                                            <li>Julian Baumgartner</li>
-                                            <li>Julian Simioni</li>
-                                            <li>Justin Knotzke</li>
-                                            <li>Keisuke Yamaguchi</li>
-                                            <li>Ken Sallot</li>
-                                            <li>Luke NRG</li>
-                                            <li>Magnus Gille</li>
-                                            <li>Marc Boudreau</li>
-                                            <li>Mark Liversedge</li>
-                                            <li>Mark Rages</li>
-                                            <li>Michael Puchowicz</li>
-                                            <li>Mitsukuni Sato</li>
-                                            <li>Ned Harding</li>
-                                            <li>Okano Takayoshi</li>
-                                            
-                                        </ul>
-                                        <ul  class="col-md-3">
-                                            <li>Patrick McNerthney</li>
-                                            <li>Dr Phil Skiba</li>
-                                            <li>Rainer Clasen</li>
-                                            <li>Ralf Spenneberg</li>
-                                            <li>Robb Romans</li>
-                                            <li>Robert Carlsen</li>
-                                            <li>Roberto Massa</li>
-                                            <li>Ron Alford</li>
-                                            <li>Satoru Kurashiki</li>
-                                            <li>Sean Rhea</li>
-                                            <li>Steven Gribble</li>
-                                            <li>Thomas Weichmann</li>
-                                            <li>Tilman Schmiedeberg</li>
-                                            <li>Walter B&#252;rki</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <p><br><br><br><br><br><br></p>
-                                </section>
-                                
-                                <section id="section-more" class="section appear clearfix">
-                                    
-                                    <div class="container">
-                                        <h1>More</h1>
-                                        ...
-                                        <!--<i class="glyphicon glyphicon-comment"></i> Twitter-->
-                                        
-                                        </section>
-                                
-                                <footer>
-                                    
-                                </footer>
-                                </div> <!-- /container -->
-                                
-                                <!-- Core JavaScript
-                                 ================================================== -->
-                                <!-- Placed at the end of the document so the pages load faster -->
-                                <script src="js/modernizr-2.6.2.custom.min.js"></script>
-                                <script src="js/jquery-1.11.1.min.js"></script>
-                                <script src="js/jquery.easing-1.3.min.js"></script>
-                                <script src="js/bootstrap-3.1.1.min.js"></script>
-                                
-                                <script src="js/skrollr-0.6.13.min.js"></script>
-                                <!-- skrollr : parallax scrolling for the masses -->
-                                <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
-                                <!-- jquery.scrollTo : Easy element scrolling using jQuery. -->
-                                <script src="js/jquery.localscroll-1.2.7.min.js"></script>
-                                <!-- jquery.localscroll : Animated anchor navigation made easy. -->
-                                <script src="js/jquery.stellar-0.6.2.min.js"></script>
-                                <!-- jquery.stellar: Parallax scrolling made easy. -->
-                                <script src="js/jquery.appear-0.3.3.min.js"></script>
-                                <!-- jquery.appear : It implements a custom 'appear'/'disappear' events fired when an element became visible/invisible -->
-                                <script src="js/lightbox.min.js"></script>
-                                <!-- The original lightbox script -> For screenshots -->
-                                <script src="js/ekko-lightbox.min.js"></script>
-                                <!-- The ekko lightbox script -> For vimeo video in lightbox -->
-                                
-                                
-                                <script src="js/goldencheetah.js"></script>
-                                
-                                </body>
+	<body>
+	
+		<section id="header"></section>
+		<div class="navbar navbar-fixed-top screenshots" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(161,87,52,1);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+		
+					<h1><a class="navbar-brand" href="#top" data-0="line-height:90px;" data-300="line-height:50px;" title="test">GoldenCheetah</a></h1>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+						<!--<li class="active"><a href="#section-home">Home</a></li>-->
+						<li><a href="#section-download">Download</a></li>
+						<li><a href="#section-features">Features</a></li>
+						<li><a href="#section-screenshots">Screenshots</a></li>
+						<li><a href="#section-contributor">Contributors</a></li>
+						<li><a href="#section-science">Science</a></li>
+						<li><a href="#section-more">More</a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</div>
+		
+		
+		<!-- Home section -->
+		<section id="section-home" class="appear clearfix">
+			<div class="jumbotron">
+				<div class="container">
+					<h1>GoldenCheetah</h1>
+					<div class="col-md-5">
+						<img src="img/logo.png" width="300" height="300" />
+					</div>
+		
+					<ul>
+						<li>Downloads or Imports ride data directly from many <a href="#" data-toggle="tooltip" title="<b>Garmin</b> (500, 510, 800, 810,...)<br><b>SRM</b> (PowerControl V, VI and VII)<br><b>PowerTap</b> (Cervo &amp; Joule (1.0, 2.0, GPS)<br><b>O_Synce</b> (Macro, Navi2coach)">devices</a></li><!-- (Garmin, SRM PowerControl, PowerTap Cervo &amp; Joule, O Synce Navi2coach,...)-->
+						
+						<li>Imports ride data downloaded with other <a href="#" data-toggle="tooltip" title="<b>TrainingPeaks WKO+</b><br>manufacturers' software (SRM, Powertap, IBike, Ergomo, Polar)<br>">programs</a></li><!-- including TrainingPeaks WKO+ and the manufacturers' software for the Ergomo, Garmin, Polar, PowerTap, and SRM devices.-->
+						
+						<li>Provides a rich set of analysis <a href="#" data-toggle="tooltip" title="Critical Power graph<br>BikeScore calculation<br>Pedal force versus pedal velocity<BR>...">tools</a></li><!-- including a critical power graph, BikeScore calculation, histogram analysis, a best interval finder, and a pedal force versus pedal velocity chart, to name just a few.-->
+						
+						<li>Is available for Linux, Mac OS X, and Windows.</li>
+						<li>Is released under an Open Source license.</li>
+					</ul>
+					<br/>
+					<h4 class="text-warning">We believe that cyclists should be able to download their power data to the computer of their choice, analyze it in whatever way they see fit, and share their methods of analysis with others.</h4>
+					<br/>
+					<p><a id="btn-download" href="#section-download" class="btn btn-primary btn-lg" role="button">Download</a></p>
+				</div>
+			</div>
+		</section>
+		
+		<!-- spacer section:testimonial -->
+		<section id="parallax1" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<br/>
+								<h3>
+									To all those volunteers who selflessly give their time and without whom amateur sport would not exist.
+								</h3>
+								<br/>
+								<span class="author">&mdash; Graeme Obree, <i>in the dedication of Flying Scotsman</i></span>
+								<br/>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="section-download" class="section appear clearfix">
+			<div class="container">
+				<h1>Download</h1>
+				<div class="col-md-3" >
+					<h3>Release 3.1</h3>
+					<img src="img/logo.png" width="180" height="180" />
+				</div>
+				
+				<!--<p>
+				 Golden Cheetah is available in binary form for
+				 Fedora (RPMs), Mac OS X (Universal Intel binary), and Windows.
+				 It is also available as source code.
+				 </p>-->
+				
+				<div class="col-md-9" >
+					<BR>
+					<p>We are proud to announce that GoldenCheetah v3.1 was released.<br>
+					Installation is simple. Download the file for your operating system.
+					<BR>
+					You can also <a href="release-notes.html">view the release notes</a> for 3.1
+					</p>
+					
+					<div class="col-md-9 alert simplebox">
+						<div class="col-md-6">
+							Windows <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah_32bit_3.1.0_Windows_Installer.exe" data-toggle="tooltip" title="For Windows, run the Installer and follow the prompts.">32-bit</a>
+							/
+							<a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah_64bit_3.1.0_Windows_Installer.exe" data-toggle="tooltip" title="For Windows, run the Installer and follow the prompts.">64-bit</a>
+							<br/>
+							Mac OS X (10.6+) <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-Uni-3.1.0-QT4.dmg" data-toggle="tooltip" title="On Mac, open the DMG and drag and drop where you would like to install.">Universal</a>
+							/
+							<a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-64bit-3.1.0-QT5.dmg" data-toggle="tooltip" title="On Mac, open the DMG and drag and drop where you would like to install."> 64bit</a>
+							<br/>
+							
+							
+						</div>
+						
+						<div class="col-md-5">
+							Fedora 18 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc18.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
+							/ <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc18.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
+							<br/>
+							Fedora 19 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc19.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
+							/ <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc19.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
+							<br/>
+							Fedora 20 RPMS - <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc20.i686.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">32 bit</a>
+							/ <a href="https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.1/GoldenCheetah-3.1.0-1.fc20.x86_64.rpm" data-toggle="tooltip" title="For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).">64 bit</a>
+							
+							
+							
+						</div>
+					</div>
+					
+					<div class="col-md-8" >
+						You can <a href="older-releases.html">download older releases</a> of Golden Cheetah.
+					</div>
+					
+				</div>
+				
+				
+				<!--<div class="col-md-8 alert alert-info">
+				 <p>
+				 <ul>
+				 <li>On Mac, open the DMG and drag and drop where you would like to install.</li>
+				 <li>For Windows, run the Installer and follow the prompts.</li>
+				 <li>For Fedora, install as root (yum install filename.rpm) or using sudo (sudo yum install filename.rpm).</li>
+				 </ul>
+				 </p>
+				 </diV>-->
+				
+				<div class="col-md-12">
+					<p>
+					There is a <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Main-Page_Users-Guide">User guide</a>
+					and a <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/FAQ">FAQ</a> that
+					you can use to help you use the program.
+					</p>
+					<p>
+					Golden Cheetah downloads data from all versions of the PowerTap
+					computer including the new Joule GPS. Previously you needed to have the
+					FTDI USB Drivers installed if you were using the PowerTap USB cradle
+					(as opposed to the older, serial cable). This should not be necessary.
+					If you are having problems then you can manually install the
+					<a href="http://www.ftdichip.com/Drivers/D2XX.htm">FTDI USB driver</a>.
+					</p>
+					
+					<p>
+					On Windows, Linux and Mac OS X, Golden Cheetah also downloads from the SRM PCV.  On Mac
+					OS X, you'll need to install <a href="http://osx-pl2303.sourceforge.net/">the
+						open source PL2303 driver</a> to download from an SRM. Please see the
+					<a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Installing-the-d2xx-drivers-on-mac-os">WIKI</a> article
+					- <a href="https://github.com/GoldenCheetah/GoldenCheetah/wiki/Pcv-on-mac-os-x">
+						PCV on Mac OS X</a> for further information.
+					</p>
+					
+					<p>
+					There is the older Version 2.1.0  <a href="/users-guide.html">User's Guide</a> on how to install
+					and use Golden Cheetah that can assist also.
+					</p>
+					
+					
+					<h3>Development Releases</h3>
+					
+					
+					<p>Gareth Coco has also made
+					<a href="http://goldencheetah.stand2surf.net/">regular development builds</a>
+					available.  These binaries are based on the latest source code, so they may have
+					more features and less (but sometime more) bugs than the stable release above.
+					</p>
+					
+					<h3>Source Code</h3>
+					
+					<p>
+					The Golden Cheetah source code is available via git.  See the
+					<a href="developers-guide.html">Developer's Guide</a> for more information.
+					You can also <a href="http://github.com/GoldenCheetah/GoldenCheetah/tree/master/">browse
+						the source on github</a>.
+					</p>
+					<br>
+					<br>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section id="parallax2photo" class="section" data-stellar-background-ratio="0.5"> </section>
+		<section id="parallax2" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<center class="author center-block">&mdash; Photo : <a href="http://www.justinknotzke.com/">Justin Knotzke</a></center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="section-features" class="section appear clearfix featured">
+			<div class="container">
+				<!-- Example row of columns -->
+				<div class="row">
+					<h1>Features</h1>
+					<div class="col-md-6">
+						<h3>Import all popular file formats</h3>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									TrainingPeaks (WKO, PWX)
+								</li>
+								<li>
+									PowerTap (RAW, CSV)
+								</li>
+								<li>
+									ANT+ (FIT)
+								</li>
+								<li>
+									SportTracks (FITLOG)
+								</li>
+								<li>
+									Sigma (SLF, SMF)
+								</li>
+								<li>
+									Ergomo (CSV)
+								</li>
+								<li>
+									Google Earth (KML)
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Garmin (TCX, GPX)
+								</li>
+								<li>
+									Polar (HRM)
+								</li>
+								<li>
+									SRMWin  (SRM)
+								</li>
+								<li>
+									Computrainer (TXT)
+								</li>
+								<li>
+									iBike (CSV)
+								</li>
+								<li>
+									MotoACTV (CSV)
+								</li>
+							</ul>
+						</div>
+						
+						<img src="img/devices.png" width="500" />
+					</div>
+					<div class="col-md-6">
+						<h3>Cloud Integration</h3>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									TrainingPeaks
+								</li>
+								<li>
+									Strava
+								</li>
+								<li>
+									TrainingStageBuch
+								</li>
+								<li>
+									Ride With GPS
+								</li>
+								<li>
+									Cycling Analytics
+								</li>
+								<li>
+									Selfloops
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Withings Weight
+								</li>
+								<li>
+									Zeo Sleep
+								</li>
+								<li>
+									Google Calendar
+								</li>
+								<li>
+									Twitter
+								</li>
+								<li>
+									ErgDB
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<h3>Download directly</h3>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									SRM PowerControl 5/6/7
+								</li>
+								<li>
+									PowerTap Cervo
+								</li>
+								<li>
+									O Synce Macro
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									CycleOps Joule
+								</li>
+								<li>
+									Moxy Monitor (vo2)
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Forensic Ride Analysis</h3>
+						<p>Multiple charts to examine and analyse ride and interval  data including:</p>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Summary, Metadata
+								</li>
+								<li>
+									Ride Plot
+								</li>
+								<li>
+									Stress Plot
+								</li>
+								<li>
+									Pedal Force/Velocity
+								</li>
+								<li>
+									Histogram
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									2d and 3d scatter
+								</li>
+								<li>
+									HR v Power
+								</li>
+								<li>
+									Map (Google / Bing)
+								</li>
+								<li>
+									Aerolab
+								</li>
+								<li>
+									Critical Power (PD)
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h3>Edit, Search and Export Data</h3>
+						<ul>
+							<li>
+								Advanced data editor with undo, redo
+							</li>
+							<li>
+								Automatic anomaly detection
+							</li>
+							<li>
+								Fix tools for GPS, Spikes, Torque
+							</li>
+							<li>
+								Advanced interval find, free-text search, data filters and search for values
+							</li>
+							<li>
+								Export data to other applications and formats including; PWX, CSV, KML, TCX and JSON
+							</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+				
+				<div class="row">
+					<div class="col-md-3">
+						<a href="img/Wprime.png" data-toggle="lightbox" data-title="W’bal Stress Chart" data-lightbox="Ride Analysis">
+							<img src="img/Wprime.png" class="img-responsive"/>
+						</a>
+						<center class="small">W’<sub>bal</sub> Stress Chart</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/CPchart.png" data-toggle="lightbox" data-title="Critical Power Chart" data-lightbox="Ride Analysis">
+							<img src="img/CPchart.png" class="img-responsive" />
+						</a>
+						<center class="small">Critical Power Chart</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/RidePlot.png" data-toggle="lightbox" data-title="Ride Plot" data-lightbox="Ride Analysis">
+							<img src="img/RidePlot.png" class="img-responsive" />
+						</a>
+						<center class="small">Ride Plot</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/RideSummary.png" data-toggle="lightbox" data-title="Ride Summary" data-lightbox="Ride Analysis">
+							<img src="img/RideSummary.png" class="img-responsive" />
+						</a>
+						<center class="small">Ride Summary</center>
+					</div>
+				</div> <!-- row -->
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Track performance and Trends</h3>
+						<p>Track performance and physiological markers for over 130 metrics, user-definable best durations, model estimates:</p>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Personal Bests
+								</li>
+								<li>
+									Time In Zone
+								</li>
+								<li>
+									Power Peaks
+								</li>
+								<li>
+									CP, W’, P-Max
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Apply data filters
+								</li>
+								<li>
+									Performance Manager
+								</li>
+								<li>
+									Ae/An TISS Stress
+								</li>
+								<li>
+									Power Distribution
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h3>Compare Seasons, Rides, Intervals and Athletes</h3>
+						<ul>
+							<li>
+								Intuitive drag-and-drop interface
+							</li>
+							<li>
+								Supports most important charts; Critical Power, Ride, Histogram, Trends and more
+							</li>
+							<li>
+								CP also supports Delta and Percentage comparisons to a baseline season
+							</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+				
+				<div class="row">
+					<div class="col-md-3">
+						<a href="img/TISS.png" data-toggle="lightbox" data-title="An/Ae TISS Stress Chart" data-lightbox="Trends">
+							<img src="img/TISS.png" class="img-responsive" />
+						</a>
+						<center class="small">An/Ae TISS Stress Chart</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/CPdelta.png" data-toggle="lightbox" data-title="Critical Power Delta Compare" data-lightbox="Trends">
+							<img src="img/CPdelta.png" class="img-responsive" />
+						</a>
+						<center class="small">Critical Power Delta Compare</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/ModelEstimate.png" data-toggle="lightbox" data-title="Model Estimates" data-lightbox="Trends">
+							<img src="img/ModelEstimate.png" class="img-responsive" />
+						</a>
+						<center class="small">Model Estimates</center>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/PeakPower.png" data-toggle="lightbox" data-title="Peak Power" data-lightbox="Trends">
+							<img src="img/PeakPower.png" class="img-responsive" />
+						</a>
+						<center class="small">Peak Power</center>
+					</div>
+				</div> <!-- row -->
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Ride Indoors</h3>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Any ANT+ Power Meter
+								</li>
+								<li>
+									Racermate Computrainer
+								</li>
+								<li>
+									Tacx Fortius
+								</li>
+								<li>
+									Virtual Power
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Video Playback
+								</li>
+								<li>
+									Google Streetview
+								</li>
+								<li>
+									Realtime Plot
+								</li>
+								<li>
+									Pre-programmed Workouts (erg, crs, pgmf)
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h3>Fully Customisable UI</h3>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									User defined charts
+								</li>
+								<li>
+									Flexible Screen Layouts
+								</li>
+								<li>
+									Themes and Color Setup
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>
+									Summary Metrics and parameters
+								</li>
+								<li>
+									Native look and feel for Linux, Mac and Windows XP to 8.1
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- row -->
+				
+				<div class="row">
+					<div class="col-md-3">
+						<a href="img/RideIndoor1.png" data-toggle="lightbox" data-title="Ride Indoor" data-lightbox="RideIndoor">
+							<img src="img/RideIndoor1.png" class="img-responsive" />
+						</a>
+						<!-- <center class="small">Ride Indoor</center>-->
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/RideIndoor2.png" data-toggle="lightbox" data-title="Ride Indoor" data-lightbox="RideIndoor">
+							<img src="img/RideIndoor2.png" class="img-responsive" />
+						</a>
+						<!-- <center class="small">Ride Indoor</center>-->
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/Customise.png" data-toggle="lightbox" data-title="Customise" data-lightbox="UI">
+							<img src="img/Customise.png" class="img-responsive" />
+						</a>
+						<!--<center class="small">Customise</center>-->
+					</div>
+					
+					<div class="col-md-3">
+						<a href="img/About.png" data-toggle="lightbox" data-title="About" data-lightbox="UI">
+							<img src="img/About.png" class="img-responsive" />
+						</a>
+						<!--<center class="small">About</center>-->
+					</div>
+				</div> <!-- row -->
+				
+			</div> <!-- container -->
+		</section>
+		
+		<section id="parallax3" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<br/>
+								<h3>
+									It’s not the will to win that matters—everyone has that. It’s the will to prepare to win that matters
+								</h3>
+								<br/>
+								<span class="author">&mdash; Paul "Bear" Bryant</span>
+								<br/>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="section-screenshots" class="section appear clearfix featured">
+			<div class="container">
+				<!-- Example row of columns -->
+				<div class="row">
+					<h1>Videos/Screenshots</h1>
+					
+					<div class="col-md-3">
+						<a href="http://vimeo.com/99817526" id="vimeo1" data-remote="http://player.vimeo.com/video/99817526" data-toggle="ekkoLightbox" data-width="800" data-title="What's New in GoldenCheetah Version 3.1"><img src="img/NewGC31_video.png" class="img-responsive"/></a><BR>
+						<center>What's New in GoldenCheetah 3.1</center><BR>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="http://vimeo.com/100244204" id="vimeo2" data-remote="http://player.vimeo.com/video/100244204" data-toggle="ekkoLightbox" data-width="800" data-title="The Critical Power Chart"><img src="img/CPChart_video.png" class="img-responsive"/></a><BR>
+						<center>The Critical Power Chart</center><BR>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="http://vimeo.com/100599100" id="vimeo3" data-remote="http://player.vimeo.com/video/100599100" data-toggle="ekkoLightbox" data-width="800" data-title="W'bal"><img src="img/WprimeBal_video.png" class="img-responsive"/></a><BR>
+						<center>W'bal</center><BR>
+					</div>
+					
+					<div class="col-md-3">
+						<a href="http://vimeo.com/101867214" id="vimeo4" data-remote="http://player.vimeo.com/video/101867214" data-toggle="ekkoLightbox" data-width="800" data-title="Metric Trends Chart"><img src="img/MetricTrendsChart_video.png" class="img-responsive"/></a><BR>
+						<center>Metric Trends Chart</center><BR>
+					</div>
+					
+					
+					
+					<!--<iframe src="http://player.vimeo.com/video/99817526" width="500" height="279" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/99817526">What's New in GoldenCheetah Version 3.1</a> from <a href="http://vimeo.com/user3992403">mark liversedge</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
+					
+					
+					
+				</div>
+				</section>
+		
+		<section id="parallax4photo" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+				</div>
+			</div>
+		</section>
+		<section id="parallax4" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<div class="testimonial clearfix" >
+									<center class="author center-block">&mdash; Photo : <a href="http://www.nknotzke.com/">Justin Knotzke</a></center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		
+		
+		<section id="section-contributor" class="section appear clearfix">
+			
+			<div class="container">
+				<h1>Contributors</h1>
+				
+				<p>Sean Rhea bought a PowerTap Pro on April 20, 2006 and immediately set
+				to figuring out how to use it from his Mac without using Virtual PC.
+				With help from Russ Cox and David Easter, he wrote two command-line
+				programs for downloading data from a PowerTap and interpreting that
+				data.  Sean released these two tools, <code>ptdl</code> and
+				<code>ptunpk</code>, on May 4, 2006.</p>
+				
+				<p>Later that year, Sean needed to learn QT for his real job, and he set
+				about writing a graphical version of his software for practice.  He
+				released the first graphical version on September 6, 2006, changing the
+				name to GoldenCheetah in reference to an old legend from his days as a
+				runner.</p>
+				
+				<p>Since then, a large community has contributed additional code and
+				other support, including:</p>
+				
+				<p><br></p>
+				
+				
+				<div class="col-md-3">
+					<ul>
+						<li>Alejandro Martinez</li>
+						<li>Andrew Bryson</li>
+						<li>Andy Froncioni</li>
+						<li>Austin Roach</li>
+						<li>Berend De Schouwer</li>
+						<li>Bruno Assis</li>
+						<li>Chris Cleeland</li>
+						<li>Christian Charete</li>
+						<li>Claus Assmann</li>
+						<li>Dag Gruneau</li>
+						<li>Damien Grauser</li>
+						<li>Darren Hague</li>
+						<li>Dave Waterworth</li>
+						<li>Dean Junk</li>
+					   
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li>Eric Brandt</li>
+						<li>Eric Murray</li>
+						<li>Frank Zschockelt</li>
+						<li>Gareth Coco</li>
+						<li>Greg Lonnon</li>
+						<li>Ilja Booij</li>
+						<li>Jaime Jofre</li>
+						<li>Jamie Kimberley</li>
+						<li>Jim Ley</li>
+						<li>J&#246;rn Rischm&#252;ller</li>
+						<li>John Ehrlinger</li>
+						<li>Jon Beverley</li>
+						<li>Jon Escombe</li>
+						<li>Josef Gebel</li>
+					</ul>
+				</div>
+				<ul class="col-md-3">
+					<li>Julian Baumgartner</li>
+					<li>Julian Simioni</li>
+					<li>Justin Knotzke</li>
+					<li>Keisuke Yamaguchi</li>
+					<li>Ken Sallot</li>
+					<li>Luke NRG</li>
+					<li>Magnus Gille</li>
+					<li>Marc Boudreau</li>
+					<li>Mark Liversedge</li>
+					<li>Mark Rages</li>
+					<li>Michael Puchowicz</li>
+					<li>Mitsukuni Sato</li>
+					<li>Ned Harding</li>
+					<li>Okano Takayoshi</li>
+				   
+				</ul>
+				<ul  class="col-md-3">
+					<li>Patrick McNerthney</li>
+					<li>Dr Phil Skiba</li>
+					<li>Rainer Clasen</li>
+					<li>Ralf Spenneberg</li>
+					<li>Robb Romans</li>
+					<li>Robert Carlsen</li>
+					<li>Roberto Massa</li>
+					<li>Ron Alford</li>
+					<li>Satoru Kurashiki</li>
+					<li>Sean Rhea</li>
+					<li>Steven Gribble</li>
+					<li>Thomas Weichmann</li>
+					<li>Tilman Schmiedeberg</li>
+					<li>Walter B&#252;rki</li>
+				</ul>
+			</div>
+			<p><br><br><br><br><br><br></p>
+		</section>
+		
+		<section id="parallax5" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<br/>
+								<h3>
+									If I have seen further it is by standing on the shoulders of Giants.
+								</h3>
+								<br/>
+								<span class="author">&mdash; Isaac Newton, <i>The Correspondence Of Isaac Newton</i></span>
+								<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		
+		<section id="section-science" class="section appear clearfix">
+			
+			<div class="container">
+				<div class="row">
+					<h1>Science in Golden Cheetah</h1>
+					
+					<p>
+						Wherever possible we choose to use published science. 
+						Science that has been developed with the academic rigour demanded by the scientific method;
+                        evidence based, peer-reviewed and original. This means we are able to provide the best 
+                        analysis available, but at the cost of a steep learning curve for new users. 
+						So below, we try to introduce some of the most important concepts, why they are 
+                        important and how they might help you to improve.
+					</p>
+
+					<h2>Power and Duration - Critical Power and W’</h3>
+					<div class="" id="viewdetails-powerduration" class="col-lg-12">
+						<p>
+							How hard can you go, in watts, for half an hour is going to be very different to 
+                            how hard you can go for say, 20 seconds. Then thinking about how hard you can go 
+                            for a very long time will be different again.  When it comes to reviewing and 
+                            tracking changes in your performance and planning future workouts you quickly 
+                            realise how useful it is to have a good understanding of your own limits.
+						</p>
+						<p>
+							<img style='float:right;width:300px; margin-left:10px;' src="img/CPModel_sience.png" 
+                                 class="img-rounded img-responsive center-block"/>
+							In 1965 two scientists Monod and Scherrer presented a ‘Critical Power Model’ 
+							where the Critical Power of a muscle is defined as ‘the maximum rate of work that 
+                            it can keep up for a very long time without fatigue’.  They also proposed an 
+                            ‘energy store’ (later to be termed W’) that represented a finite amount of work 
+                            that could be done above that Critical Power. 
+						</p>
+						
+						<p class="col-rg-5">
+							
+						</p>
+						
+						<p>
+							In cycling parlance W’ would be referred to as the matchbook– the harder you go 
+                            the quicker it will be used up, but temper your efforts and you can ‘save a match’ 
+                            for the last sprint.  CP, on the other hand, is that intensity (or power output) 
+                            where you are uncomfortable but stable, akin to your TT pace.  You know that if 
+                            you try to go any harder you are gonna blow up pretty quickly. 
+						</p>
+						<p>
+							Monod and Scherrer also provided a mathematical formula to estimate the maximum power 
+                            you can go for any given duration using W’ and CP as parameters.  This formula is 
+                            pretty reliable for durations between 2 minutes and an hour or so, but less reliable 
+                            for shorter and longer durations.  So, over the last 50 years, variations of these 
+                            models have been developed to address this, and it still continues to be a topic of 
+                            great scientific interest. 
+						</p>
+						<p>
+							We have implemented some of these models so you can get power estimates to predict 
+                            and review your training and racing.  We have also implemented a wholly new model 
+                            called the ‘Extended CP model’ that is based upon bioenergetics.
+						</p>
+						
+					</div>
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-powerduration"></a>-->
+				
+				
+					<h2>Bioenergetics</h3>
+					<div class="" id="viewdetails-bioenergetics" class="col-lg-12">
+						<p>
+							<img style='float:right;width:300px; margin-left:10px;' src="img/Bioenergetics_sience.png" 
+                                 class="img-rounded img-responsive center-block"/>
+							We use complex sources of overlapping energy when we exercise. 
+							These energy sources are anaerobic with a limited capacity and a high rate limit 
+                            (like W’) and aerobic with an unlimited capacity but a low rate limit (like CP).
+						</p>
+						
+						<h3>Anaerobic Systems</h3>
+						<p>
+							In the first 10 seconds or so of high output work we draw upon energy stored within 
+                            the muscles that have immediate availability – so we can sprint all out for 10-30 
+                            seconds without drawing breath and at very high work rates.  These chemicals are 
+                            phosphates called ATP (adenosine triphosphate) and PCr (phosphorcreatine). 
+                            Interestingly, after about 3 minutes of total rest these stores are largely replenished.
+						</p>
+						<p>
+							So for the next 50 seconds or so after those phosphates are depleted we primarily 
+                            get our energy from glycolysis and still without drawing breath.  This is the 
+                            conversion of glucose into lactate. It takes us about 1 hr to recover and remove 
+                            all the lactic acid produced, but most of it is gone after about 10 minutes – 
+                            and we can speed up this clearance through light exercise – which is why a warm-down 
+                            is a good idea after intense exercise.
+						</p>
+						
+						<h3>Aerobic Systems</h3>
+						<p>
+							But now, sadly, after that all-out minute we are going to have to draw breath, 
+                            because we need the oxygen to power the aerobic energy systems.  First up we get 
+                            aerobic glycolysis, this is converting glucose into pyruvate by burning it with 
+                            oxygen in a really complicated 10 stage cycle.  The conversion rate is limited 
+                            by the amount of oxygen the lungs can absorb (vo2max) and the available fuels. 
+							It can take anywhere between 1-3 minutes to get up to ‘peak’ production and then 
+                            dies away slowly over time.  Once all the glucose is gone, we will bonk, which 
+                            is why gels and powders are high in easily digested glucose – to refuel this process. 
+							Lastly, from about 6-7 minutes we start to rely upon lipolysis that utilises 
+                            an almost limitless source of energy; fat and water. So stay hydrated !
+						</p>
+						
+						<h3>The Future of Power-Duration models</h3>
+						<p>
+							Our Extended Power Duration Model extracts the likely contribution of these 
+                            energy systems to predict the energy production (or watts per second).  This 
+                            is akin to reading the fuel gauge to work out how fast you’re going in a car. 
+							It’s not an exact science and so yields an approximated answer, which can be 
+                            slightly overestimated because it doesn’t really consider why we fatigue.
+						</p>
+						<p>
+							It is likely that in the next 2-3 years current research will help to explain 
+                            muscular, neural and psychological fatigue or constraints.  These in turn can 
+                            be used to refine our models.  Research is also likely to expand our understanding 
+                            of W’ and CP and how they reflect underlying physiology and associated dynamics 
+                            (maybe even CP fluctuates depending upon how we ride).
+						</p>
+						
+					</div>
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-bioenergetics"></a>-->
+					
+					<h2>Motor Units - Recruitment and Fatigue</h3>
+					<div class="" id="viewdetails-mu" class="col-lg-12">
+						<h3>Slow and Fast-twitch Muscles</h3>
+						<p>
+							Roughly 40% of your body weight is muscle; skeletal muscle that’s attached to 
+                            your bones via tendons and are controlled via conscious thought (“shut up legs, 
+                            pedal faster”), but also smooth muscle including arteries, the bladder, eye and 
+                            reproductive organs and of course cardiac muscle pumping blood 24x7 and again 
+                            without any conscious thought.
+						</p>
+						<p>
+							We’re going to focus on skeletal muscle. Our legs contain lots of different 
+                            muscle groups; the quadriceps, hamstrings, calves etc.  These muscle groups work 
+                            together when we walk, run, kick and jump. Each muscle group in turn is comprised 
+                            of a large number of motor units (MU) that in turn contain a motor neuron and a 
+                            collection of muscle fibres. Our brain triggers a muscle group into action by 
+                            recruiting as many of its motor units as needed to meet the force we want.  It does 
+                            this by firing the motor neurons that sends an electrical pulse to the muscle 
+                            fibres causing them to contract.
+						</p>
+						<p>
+							The force that a muscle fibre contracts is known as twitchiness; we have type I 
+                            known as slow-twitch fibres that don’t contract with much force but can keep 
+                            doing it for a long time and a type II also known as fast-twitch that can be 
+                            very powerful, but fatigue much more quickly. In healthy adults the distribution 
+                            of type I/II differs significantly by muscle group and also to a lesser extent 
+                            upon your genetics. Further, type II fibers are either type IIa that can use 
+                            aerobic and anaerobic energy or stronger type IIb that will only use anaerobic.
+						</p>
+						<p>
+							With training we can increase our overall muscle mass and can also convert some 
+                            of our fast-twitch to slow-twitch fibres to improve endurance performance but 
+                            at the cost of a loss of strength.
+						</p>
+						
+						<h3>Recruitment and Central and Peripheral Muscle Fatigue</h3>
+						<p>
+							As we increase the power we want to generate our brains will recruit more and 
+                            more of the motor units to meet the demand.  As the demand gets higher we reach 
+                            a point where all motor units available will be firing.  When fresh and all motor 
+                            units are available we will hit our P-max power, but if we’re fatigued some of 
+                            those muscles will be exhausted and unavailable – and our maximum power will be 
+                            reduced.  This peripheral fatigue occurs much earlier for fast-twitch than 
+                            slow-twitch muscles.  So our brain will always recruit from slow-twitch before 
+                            fast-twitch muscles to meet demand – so the fast twitchers are saved for when 
+                            we really need them.
+						</p>
+						<p>
+							Aside from fatigue within the muscle fibres, our brains and neurons will also 
+                            limit what we can achieve; in some cases this keeps us well within our natural 
+                            capabilities, perhaps as a ‘safety mechanism’.  And there is lots of research 
+                            being done into this central fatigue to see how if differs by individual and 
+                            how much it can be changed with training and the right ‘motivation’.
+						</p>
+					</div>	
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-mu"></a>-->
+					
+					<h2>The Lactate Threshold - LT1, LT2 and Friends</h2>
+					<div class="" id="viewdetails-threshold" class="col-lg-12">
+						<h3>Lactate Threshold </h3>
+						<p>
+							Now remember that pyruvate we created earlier when our muscles were burning 
+                            glucose, it can go in two directions, a kind of ‘fork in the road’; either it 
+                            is shuttled back into muscle cells and used as fuel (good) or if they’re not 
+                            available, it is converted to lactic acid (bad).  Initially our blood flow 
+                            will clear lactic acid away as it is produced to the liver, heart, kidneys 
+                            where it is slowly converted and stored as fuel for re-use (its more 
+                            complicated than that, but lets not worry about it here).
+						</p>
+						<p>
+							As we work a little harder lactate will be created a bit faster, but at the 
+                            same time blood flow increases our heartrate goes up so we keep clearing it. 
+							But eventually we get to a point where lactate levels increase above the 
+                            baseline (typically 1mmol above), this point is known as “LT1”.  At this 
+                            point we will feel that we are working, but no more than a tempo pace. As 
+                            we continue to go harder, blood lactate accumulation will increase and so 
+                            will blood flow as our heart rate rises. We will eventually get to a tipping 
+                            point where clearance and accumulation will be at a maximum point we can 
+                            sustain; this is the intensity that best relates to a TT pace and is called 
+                            “LT2” or more technically the maximal lactate steady state (MLSS).  The 
+                            intensity / power at this point has been shown to be closely related to FTP 
+                            and CP (although CP is typically a bit higher).
+						</p>
+						<p>
+							From here if we go harder then we will eventually crash and burn as we hit 
+                            our maximum HR and can’t get enough oxygen in, let alone clear the acid 
+                            that’s burning in our legs.  These are the higher intensities related to W’.
+						</p>
+						
+						<h3>Shifting the curve to the right</h3>
+						<p>
+							<img style='float:right;width:300px; margin-left:10px;' src="img/PolarizedZones_sience.png" 
+                                 class="img-rounded img-responsive center-block"/>
+
+							So, if we can shift the blood lactate curve to the right we can exercise 
+                            harder for longer and make it mentally easier to exercise at mid-range 
+                            intensities.  Looking back at the pyruvate ‘fork in the road’, we need 
+                            to train our bodies to burn less glucose for fuel and get better at shuttling 
+                            pyruvate into muscle cells before resorting to producing lactic acid at all.
+						</p>
+						<p>
+							Our slow-twitch muscle fibres have high volumes of cellular ‘power plants’ 
+                            called mitochondria these are the destinations for that pyruvate; the more 
+                            we have the greater capacity we have to re-use pyruvate and less lactate 
+                            will be produced.
+						</p>
+						<p>
+							Secondly, fat metabolism doesn’t create lactic acid at all, so the greater 
+                            power we can develop solely from this (again using our slow-twitch muscles) 
+                            the less reliance we will have on glucose energy and lactate clearance.
+						</p>
+						<p>
+							So, training interventions that increase the volume and density of 
+                            slow-twitch fibres and mitochondria will shift that curve to the right and 
+                            improve endurance performance.  Power at LT2 (CP/FTP) are therefore good 
+                            indicators of endurance performance.
+						</p>
+					</div>	
+
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-threshold"></a>-->
+					
+					<h2>W’ Expenditure and Reconstitution  - W’bal</h2>
+					<div class="" id="viewdetails-wprime" class="col-lg-12">
+						<h3>Matches and Pacing – W’<sub>bal</sub></h3>
+						<p>
+							Unless we’re riding the pursuit or a very flat time trial, when we train 
+                            and race we tend to ride sustained efforts interspersed with recovery.  These 
+                            intermittent bouts might occur when we climb a hill, or sprint out of a corner 
+                            or bridge a gap.  In fact almost all training and racing away from the turbo 
+                            tends to be variable because of this.
+						</p>
+						<p>
+							<img style='float:right;width:500px; margin-left:10px;' src="img/WPrime_sience.png" 
+                                 class="img-rounded img-responsive center-block"/>
+
+							Now, we know from the Critical Power model that when we work above CP we 
+                            start eating into our limited W’ stores.  If we keep going hard enough for 
+                            long enough we will blow when it’s all gone. But, we also know that it will 
+                            also be replenished over time too.
+						</p>
+						<p>
+							When we work below CP the energy stores within the muscles are restocked. 
+							The further below CP we are the faster we will recover, and for the first 
+                            30 seconds of recovery we get the most bang for buck as blood-flow into 
+                            the muscles is still high from the previous bout 
+						</p>
+						<p>
+							Dr Skiba et al provided a formula for tracking the levels of W’, called W’bal 
+                            that we can plot alongside power.  It is particularly useful for assessing 
+                            workouts for likely failure before attempting them and also for reviewing and 
+                            comparing intervals within a single workout, even when they are of differing 
+                            durations.
+						</p>
+						<p>
+							It is likely that in the near future you will see W’bal appear on bike computer 
+                            headunits to show you the capacity remaining as you race.
+						</p>
+					</div>	
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-wprime"></a>-->
+					
+					<h2>Quantifying Stress and Strain - TSS, BikeScore and Friends</h2>
+					<div class="" id="viewdetails-stress" class="col-lg-12">
+						<h3>Analysing Power Data – Average, xPower and NP</h3>
+						<p>
+							When you first start using a power meter you notice that power tends to move 
+                            around a lot more than, say, your heart-rate. 
+						</p>
+						<p>
+							When you stop pedalling power drops to zero immediately, but HR may take 30 
+                            seconds or so to recover. In truth, although the power meter says zero watts 
+                            when you stop, the body’s physiological response continues for roughly 30 
+                            seconds, as HR drops, breathing recovers and more complex energy system 
+                            processes continue.
+						</p>
+						<p>
+							This means that if we want to use power output as a measure of training 
+                            stress we will also need to translate those simplistic power readings into 
+                            something that reflects the associated physiological processes and their 
+                            half-lives.
+						</p>
+						<table class="table-compare">
+							<tr><th class="compare1">Skiba/Literature</th><th class="compare2">Coggan/TrainingPeaks</th></tr>
+							<tr><td class="compare1">Variability Index</td><td class="compare2">Variability Index</td></tr>
+							<tr><td class="compare1">Relative Intensity</td><td class="compare2">Intensity Factor</td></tr>
+							<tr><td class="compare1">xPower</td><td class="compare2">Normalised Power</td></tr>
+							<tr><td class="compare1">BikeScore</td><td class="compare2">Training Stress Score</td></tr>
+							<tr><td class="compare1">Critical Power</td><td class="compare2">Functional Threshold Power</td></tr>
+							<tr><td class="compare1">W’</td><td class="compare2">Functional Reserve Capacity</td></tr>
+							<tr><td class="compare1">W’bal</td><td class="compare2">dFRC</td></tr>
+						</table>
+						<p>
+							This is what Dr Andrew Coggan’s Normalised Power and Dr Phil Skiba’s 
+                            xPower are doing; they ‘smooth out’ the power data to reflect the 
+                            underlying physiological processes.  Whilst the underlying assumptions 
+                            and maths differ slightly they both yield a power output that will reflect 
+                            the stress of the variable power values more accurately than just taking 
+                            a simple average.
+						</p>
+
+						<h3>Quantifying Stress – Work, Intensity, TSS and TISS</h3>
+						<p>
+							Given that work in joules can be calculated by multiplying power by time it 
+                            is very tempting to use this to measure the stress of a ride.  But as we get 
+                            stronger and more efficient those joules become easier to produce, and thus 
+                            the training stress accrued in the workout should reflect that.
+						</p>
+						<p>
+							Given that work in joules can be calculated by multiplying power by time it 
+                            is very tempting to use this to measure the stress of a ride.  But as we get 
+                            stronger and more efficient those joules become easier to produce, and thus 
+                            the training stress accrued in the workout should reflect that.
+						</p>
+						<p>
+							But there is still a problem, we know that work at high intensities for short 
+                            durations elicits a different strain to work at low intensities for longer 
+                            durations and there comes a point where more pain will give little gain. 
+							To counter this Dr Skiba introduced Ae and An TISS that are weighted differently 
+                            for low and high intensity work and allow us to track these training stresses 
+                            separately.
+						</p>
+						
+					</div>	
+					<!--<a class="btn showdetails" data-toggle="collapse" data-target="#viewdetails-stress"></a>-->
+			</div>   
+		</section>
+		
+		<section id="parallax6" class="section" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="align-center">
+							<div class="testimonial clearfix" >
+								<br/>
+								<h3>
+									Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning.
+								</h3>
+								<br/>
+								<span class="author">&mdash; Albert Einstein, <i>Relativity: The Special and the General Theory</i></span>
+								<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		
+		<section id="section-more" class="section appear clearfix">
+			<div class="container">
+				<h1>More</h1>
+				...
+				<!--<i class="glyphicon glyphicon-comment"></i> Twitter-->
+			</div>   
+		</section>
+		
+		
+		
+		<!-- Core JavaScript
+		 ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/modernizr-2.6.2.custom.min.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.easing-1.3.min.js"></script>
+		<script src="js/bootstrap-3.1.1.min.js"></script>
+		
+		<script src="js/skrollr-0.6.13.min.js"></script>
+		<!-- skrollr : parallax scrolling for the masses -->
+		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<!-- jquery.scrollTo : Easy element scrolling using jQuery. -->
+		<script src="js/jquery.localscroll-1.2.7.min.js"></script>
+		<!-- jquery.localscroll : Animated anchor navigation made easy. -->
+		<script src="js/jquery.stellar-0.6.2.min.js"></script>
+		<!-- jquery.stellar: Parallax scrolling made easy. -->
+		<script src="js/jquery.appear-0.3.3.min.js"></script>
+		<!-- jquery.appear : It implements a custom 'appear'/'disappear' events fired when an element became visible/invisible -->
+		<script src="js/lightbox.min.js"></script>
+		<!-- The original lightbox script -> For screenshots -->
+		<script src="js/ekko-lightbox.min.js"></script>
+		<!-- The ekko lightbox script -> For vimeo video in lightbox -->
+		
+		
+		<script src="js/goldencheetah.js"></script>
+
+		<footer></footer>	
+    </body>
 </html>
