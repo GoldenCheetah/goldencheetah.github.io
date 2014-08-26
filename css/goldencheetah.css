@@ -199,13 +199,41 @@ section .row {
 }
 
 #section-contributor h1 {
+	color: #8000FF;
+}
+
+#section-science {
+    min-height:600px;
+	color: #fff;
+	background-color: #555;
+}
+
+#section-science h1 {
 	color: #ff3588;
+}
+
+#section-science h2 {
+	color: #ff3588;
+}
+
+#section-science h3 {
+	color: #ff3588;
+}
+
+#section-science .btn {
+    color: #fff;
+	background-color: #ff3588;
+	font-size: 11px;
 }
 
 #section-more {
     min-height:100px;
 	color: #000;
 	background-color: #ddd;
+}
+
+#section-more h1 {
+	color: #0000FF;
 }
 
 /* Tooltp */
@@ -245,17 +273,29 @@ section .row {
 	color: #000;
 }
 
-#parallax2{
-    min-height:300px;
+#parallax2 {
+    min-height:20px;
 	color: #000;
     background-color: #0ff; /* #ff3588 */
-	/*background-image: url(../img/parallax02.jpg);*/
-	padding-top: 20px;
-	padding-bottom:40px;
+	/*background-image: url(../img/photo02.jpg);*/
+	/*padding-top: 20px;
+	padding-bottom:40px;*/
 	position:relative;
 }
 
-#parallax3{
+#parallax2photo {
+    min-height:300px;
+	color: #000;
+    background-color: #8000FF;
+	background-image: url(../img/photo02.jpg);
+    background-size:   cover;  
+	/*background-size: 800px;
+	background-repeat: no-repeat;
+	background-position: center; */
+	position:relative;
+}
+
+#parallax3 {
     min-height:300px;
 	color: #000;
     background-color: #aeee00;
@@ -265,11 +305,46 @@ section .row {
 	position:relative;
 }
 
-#parallax4{
+#parallax4 {
+    min-height:20px;
+	color: #000;
+    background-color: #8000FF;
+	/*background-image: url(../img/photo01.jpg);
+	background-size: 800px;
+	background-repeat: no-repeat;
+	background-position: center; */
+	/*padding-top: 20px;
+	padding-bottom:40px;*/
+	position:relative;
+}
+
+#parallax4photo {
+    min-height:300px;
+	color: #000;
+    background-color: #8000FF;
+	background-image: url(../img/photo01.jpg);
+    background-size:   cover;
+	/*background-size: 800px;
+	background-repeat: no-repeat;
+	background-position: center; */
+	padding-top: 20px;
+	//padding-bottom:40px;
+	position:relative;
+}
+
+#parallax5 {
     min-height:300px;
 	color: #000;
     background-color: #ff3588;
-	/*background-image: url(../img/parallax03.jpg);*/
+	padding-top: 20px;
+	padding-bottom:40px;
+	position:relative;
+}
+
+#parallax6 {
+    min-height:300px;
+	color: #000;
+    background-color: #0000FF;
 	padding-top: 20px;
 	padding-bottom:40px;
 	position:relative;
@@ -302,5 +377,40 @@ body {
 	border-color: #723E27; /* #723E27 */
 }
 
+.in.collapse+a.btn.showdetails:before { 
+    content:'Hide details <<';
+}
+.collapse+a.btn.showdetails:before { 
+    content:'Show details >>'; 
+}
+
+.table-compare {
+	border-spacing: 10px;
+    border-collapse: separate;
+	background-color: #FFFFFF;
+	table-layout: fixed;
+    width: 400px;
+	float:right;
+	margin-left:10px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+.table-compare th {
+    overflow: hidden;
+    width: 150px;
+}
+
+.compare1 {
+	color:red;
+	text-align:right;
+}
+
+.compare2 {
+	color:blue;
+	text-align:left;
+}
 
 
