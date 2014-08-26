@@ -1172,10 +1172,14 @@
                             the training stress accrued in the workout should reflect that.
 						</p>
 						<p>
-							Given that work in joules can be calculated by multiplying power by time it 
-                            is very tempting to use this to measure the stress of a ride.  But as we get 
-                            stronger and more efficient those joules become easier to produce, and thus 
-                            the training stress accrued in the workout should reflect that.
+                            To account for this we need some kind of score that takes into account how 
+                            hard the ride is based upon our current capability. This is precisely what 
+                            BikeScore and TSS do. They reflect the stress by taking into account the 
+                            relative intensity of the workout. This intensity factor is computed as a 
+                            ratio of the xPower to our current CP. This intensity is then multiplied by 
+                            the ride duration to get an overall stress score; the higher the stress 
+                            score the bigger impact it will have had and likely the more recovery we 
+                            will need the day after.
 						</p>
 						<p>
 							But there is still a problem, we know that work at high intensities for short 
