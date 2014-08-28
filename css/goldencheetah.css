@@ -18,7 +18,7 @@
 	padding-bottom:0;
 }
 
-.screenshots {
+.tutorials {
     background-color: rgba(201,94,12,0.8);
 }
 
@@ -181,13 +181,13 @@ section .row {
 	color: #0ff;
 }
 
-#section-screenshots {
+#section-tutorials {
     min-height:600px;
 	color: #fff;
 	background-color: #555;
 }
 
-#section-screenshots h1 {
+#section-tutorials h1 {
 	color: #aeee00;
 }
 
