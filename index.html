@@ -1328,7 +1328,8 @@
                             underlying physiological processes.  Whilst the underlying assumptions 
                             and maths differ slightly they both yield a power output that will reflect 
                             the stress of the variable power values more accurately than just taking 
-                            a simple average.
+                            a simple average &mdash; they represent a constant power output that
+                            places the same stress as the variable data that was recorded.
 						</p>
 
 						<h3>Stress – Work, Intensity, TSS and TISS</h3>
@@ -1392,7 +1393,8 @@
                             capability; where Work (in Joules) is an absolute measure of stress.  Also, we all respond 
                             differently to training; high-responders will see a more dramatic increase in performance 
                             from the same training load that a low-responder does. It is important to remember this when 
-                            assessing outcomes and planning future training.
+                            assessing outcomes and planning future training and it would be useful for models to take
+                            this individualisation into account.
                         </p>
 
                         <h3>The Impulse-Response Model</h3>
@@ -1400,7 +1402,7 @@
                         <p>
                             Just under 40 years ago, in 1976, Eric Banister and colleagues introduced an ‘impulse-response’ 
                             model that summarized the principles of training into an elegant and coherent framework that 
-                            is individualized to the athlete.
+                            is individualised to the athlete.
                         </p>
                         <p>
                             Daily training load (TRIMPS) is used as an input to the model, but could be replaced with any 
@@ -1453,11 +1455,11 @@
 
                         </p>
                         <p>
-                            The PMC does not support individualization and it does not attempt to predict performance, but the core 
-                            concepts from the Banister model remain; (1) there are functions that attempt to describe fatigue and 
-                            fitness (2) training load is used as an input (3) training load  can be represented using any metric 
-                            (4) decay is essentially the same (maths differ only slightly in practice), with default values of 
-                            42 and 7 days used as opposed to 50 and 15 (but these can be adjusted anyway).
+                            The PMC does not support individualisation for low/high gainers and it does not attempt to predict 
+                            performance, but the core concepts from the Banister model remain; (1) there are functions that attempt 
+                            to describe fatigue and fitness (2) training load is used as an input (3) training load  can be 
+                            represented using any metric (4) decay is essentially the same (maths differ only slightly in practice), 
+                            with default values of 42 and 7 days used as opposed to 50 and 15 (but these can be adjusted anyway).
                         </p>
 
                         <h3>ATL, CTL and TSB</h3>
@@ -1465,11 +1467,11 @@
                         <p>
                             Acute and Chronic Training Load (ATL, CTL) represent the accumulated training stress (TSS) in the 
                             short-term and long-term respectively.  As long-term training load (CTL) increases 
-                            one would expect ‘fitness’ to increase since as the accumulated stress elicits adaptations. It is 
-                            widely used as a proxy for ‘fitness’, assuming a linear relationship between impulse-response. 
-                            Rapid increases in short-term load (ATL) would indicate that training workload is increasing too 
-                            fast to sustain, but this is also indicated by the third metric Training Stress Balance (TSB) which 
-                            is computed as the difference between the long and short term loads.
+                            one would expect the accumulated stress to have elicited positive adaptations as a result
+                            CTL is widely used as a proxy for ‘fitness’, assuming a linear relationship between impulse-response. 
+                            Rapid increases in short-term load (ATL) (often called the 'ramp rate') tend to indicate that training 
+                            load is increasing too fast to sustain, but this is also indicated by the third metric Training Stress 
+                            Balance (TSB) which is computed as the difference between the long and short term loads.
                         </p>
                         <p>
                             Where the Banister-IR model output predicts ‘performance’ the PMC model provides an output TSB that 
@@ -1480,7 +1482,7 @@
                             through overtraining or insufficient rest (assuming you have more than 42 days of data). 
                         </p>
                         <p>
-                            So essentially, TSB indicates if the athlete is likely to perform well, whilst CTL indicates how much 
+                            Essentially, TSB indicates if the athlete is likely to perform well, whilst CTL indicates how much 
                             training they have performed (volume, frequency and intensity combined) and, therefore, their likely
                             current ‘fitness’.
                         </p>
