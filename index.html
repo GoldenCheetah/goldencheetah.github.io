@@ -1501,14 +1501,15 @@
                         </p>
                         <p> 
                             When cycling without a draft, typically during an individual time-trial or 
-                            bike leg of a triathlon, roughly 30% of effort is spent pushing air out of the 
-                            way.  The more streamlined and slippery we can become in the wind the faster 
-                            we go for the same watts.  The drag coefficient for a cyclist is called their 
-                            <code>CdA</code> ; where A indicates it is about frontal area. The lower the 
-                            CdA the more slippery they are.  It can range from 0.49 when sat up on the hoods, 
-                            0.45 when low on the drops and all the way down to 0.28 with aerobars, helmet and 
-                            a TT bike.  Amazingly, Graeme Obree reduced his CdA to 0.17 for his hour record 
-                            but his posture was pretty extreme !
+                            bike leg of a triathlon, roughly two-thirds (or more) of effort is spent pushing 
+                            air out of the way.  The more streamlined and slippery we can become in the wind 
+                            the faster we go for the same watts.  The drag coefficient for a cyclist is called their 
+                            <code>Cd</code>; if A is the rider's frontal area then the drag coefficient times
+                            their frontal area is their <code>CdA</code> sometimes called their "drag area".
+                            The lower the CdA the more slippery they are.  It can range from 0.5 (square meters)
+                            when sat up on the hoods, 0.3 when low on the drops and all the way down to 0.2
+                            with aerobars, helmet and a TT bike.  Amazingly, Graeme Obree reduced his CdA to 
+                            0.17 for his hour record but his posture was pretty extreme !
                         <p>
                         </p>
                             Professional athletes spend thousands of dollars, and several days,  testing 
@@ -1570,7 +1571,7 @@
                             outside using a power meter and speed sensor.
 						</p>
                         <p>
-                            In the past, in order to test position and equipment and calculate their CdA 
+                            In the past, in order to test position and equipment and calculate our CdA 
                             we needed to know accurate values for; weight, speed, windspeed and yaw, power 
                             Crr, Rho, incline, gravity and acceleration.  So a field test would typically be 
                             performed on a still day on a flat road; removing the need for the windspeed, 
@@ -1601,8 +1602,6 @@
                             to make sure we don't brake, lose air from our tires or change position, because 
                             none of these things are going to be taken into account.
                         </p>
-							<img style='float:right;width:400px; margin-left:10px;' src="img/guesses.png" 
-                                 class="img-rounded img-responsive center-block"/>
                         <p>
                             If we do this then the power we used for each lap was used to overcome;
                             <ul>
@@ -1629,11 +1628,12 @@
                             the physical elevation change at the start and end of a loop is zero we need to adjust 
                             Crr and CdA until the start and end of a lap in the VE plot are the same.
                         </p>
+							<img style='float:right;width:400px; margin-left:10px;' src="img/guesses.png" 
+                                 class="img-rounded img-responsive center-block"/>
                         <p>
-                            The example shown to the right (copyright and courtesy of Dr Chung) shows a field test
-                            of 7 laps where the rider tried different bike positions for each lap. It has been
-                            plotted with different estimates for Crr and CdA, since the rider changed positions
-                            in each lap we will need to change CdA and Crr and see which laps match.
+                            The example shown to the right (courtesy of Dr Chung) shows a field test
+                            of 7 laps where the rider had his hands in one position for the first several laps
+                            then changed hand position part way through the test.
                         </p>
                         <p>
                             When the estimate for CdA and Crr are correct the VE plot for a lap will show the
@@ -1641,8 +1641,19 @@
                             that the top left plot is clearly wrong as each lap finishes higher than it started;
                             the CdA estimate is too low. The top right shows the CdA has gone up but still
                             each lap finishes slightly higher than it started. Its only in the bottom two plots
-                            that we can see a level start and end for any given lap; those are the laps that we 
+                            that we can see a level start and end for any given lap; those are the laps that were 
                             performed with the associated CdA and Crr.
+                        </p>
+                        <p>
+                            In fact, the exact point at which the rider switched his hands from one position 
+                            to the other is easily spotted – two-and-a-half laps from the end. The change in 
+                            hand position was actually quite small: the first 4 laps were with the hands on 
+                            the bar tops, the last two-and-a-half laps were with the hands on the brake hoods. 
+                            The wind conditions were not quite calm (though the wind was neither strong nor 
+                            blustery) so this example shows that small differences in aerodynamics can be 
+                            spotted even under non-ideal conditions. Of course, the better the conditions, 
+                            the fewer the laps and the more precisely and reliably you can pin down the 
+                            differences.
                         </p>
                         <p>
                             This is what Aerolab in GoldenCheetah does; it plots this virtual elevation from a ride 
