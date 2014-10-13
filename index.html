@@ -1564,21 +1564,71 @@
                             Ultimately we all want to get faster on the bike. Assuming you have done
                             all you can to shed unwanted pounds there really isn't much you can do
                             to change the wind, air density the course profile or gravity. 
-                            That leaves Crr and CdA to work on.  To avoid spending lots of money on 
-                            time in a wind-tunnel there is a practical approach called 'Virtual
-                            Elevation' (VE) devised by Dr Robert Chung that can be done outside using a 
-                            power meter and speed sensor.
+                            That leaves our tyres (Crr), bike and posture (CdA) to work on.  To avoid 
+                            spending lots of money on time in a wind-tunnel there is a practical approach 
+                            called 'Virtual Elevation' (VE) devised by Dr Robert Chung that can be done 
+                            outside using a power meter and speed sensor.
 						</p>
                         <p>
-                            In the past, in order To calculate CdA we needed to know accurate values for; 
-                            weight, speed, windspeed and yaw, power Crr, Rho, incline, gravity and acceleration.
-                            So a field test would typically be performed on a still day on a flat road; 
-                            removing the need for the windspeed, yaw, incline and gravity terms. Then looking
-                            at speed for each run it would be possible to check if a position was faster
-                            or slower. But riding without wind and hills was almost impossible to do outside 
-                            of a velodrome. And even then velodromes have problems because (believe it or not) 
-                            riding around the track you (and others there at the same time) will create your
-                            own tailwind !
+                            In the past, in order to test position and equipment and calculate their CdA 
+                            we needed to know accurate values for; weight, speed, windspeed and yaw, power 
+                            Crr, Rho, incline, gravity and acceleration.  So a field test would typically be 
+                            performed on a still day on a flat road; removing the need for the windspeed, 
+                            yaw, incline and gravity terms. Then looking at speed for each run it would be 
+                            possible to check if a position was faster or slower. But riding without wind 
+                            and hills was almost impossible to do outside of a velodrome. And even then 
+                            velodromes have problems because (believe it or not) riding around the track you 
+                            (and others there at the same time) will create your own tailwind !
+                        </p>
+                        <p>
+                            <b>So how does Virtual Elevation work ?</b>
+                        </p>
+                        <p>
+                            The single most important thing we do is to run multiple loops on the same course 
+                            with a power meter; every run will have the same overall elevation change (none), 
+                            same distance, and experience the same environmental conditions whilst the power 
+                            output and speed will vary.
+                        </p>
+                        <p>
+                            Because wind can change direction or bluster it is still a good idea to perform 
+                            these tests in a sheltered environment on as windless a day as possible. We need 
+                            to eliminate it from our calculations.
+                        </p>
+                        <p>
+                            The effects of slopes, gravity, air density will be the same for each run; we have 
+                            not eliminated their effect by riding a loop but we have made them identical for each 
+                            run. We can also assume that as a rider we weigh the same in each run. But we need 
+                            to make sure we don't brake, lose air from our tires or change position, because 
+                            none of these things are going to be taken into account.
+                        </p>
+							<img style='float:right;width:400px; margin-left:10px;' src="img/guesses.png" 
+                                 class="img-rounded img-responsive center-block"/>
+                        <p>
+                            If we do this then the power we used for each lap was used to overcome;
+                            <ul>
+                            <li>overcoming rolling resistance in the tyre (W-Crr)</li>
+                            <li>watts to overcome elevation changes (slope changes)</li>
+                            <li>watts to account for accelerations (speed changes)</li>
+                            <li>watts to account for air resistance (CdA)</li>
+                            </ul>
+                        </p>
+                        <p>
+                            This can then be converted to a relatively simple formula involving power, speed, 
+                            gravity, slope, acceleration, weight etc. 
+                        </p>
+                        <p>
+                            The clever bit is what we do with the formula next; ; it is solved for slope instead 
+                            of watts. So we end up with a formula that combines all of those opposing forces into 
+                            a virtual slope (hence the name Virtual Elevation) we had to ride up and down to get 
+                            around our loop.  We can then make some guesses about what Crr and CdA are and plot 
+                            the virtual profile taking them into account.
+                        </p>
+                        <p>
+                            This is what Aerolab in GoldenCheetah does; it plots this virtual elevation from a ride 
+                            as you adjust estimates for Crr and CdA until you can see a good fit for the elevation 
+                            profile. If you have sufficient laps and variations in positions you will be able to 
+                            determine which lap yielded the best results – and thus identified a good position and 
+                            its associated CdA.
                         </p>
             </div>
 		</section>
