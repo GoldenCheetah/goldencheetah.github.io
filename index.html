@@ -1559,7 +1559,7 @@
                             that, unless you're rolling downhill.
                         </p>
 
-						<h3>Virtual Elevation</h3>
+						<h3>Virtual Elevation - aka The Chung Method</h3>
 						<p>
                             Ultimately we all want to get faster on the bike. Assuming you have done
                             all you can to shed unwanted pounds there really isn't much you can do
@@ -1621,13 +1621,22 @@
                             The clever bit is what Dr Chung does with this formula; it is solved for slope instead 
                             of watts. So we end up with a formula that combines all of those opposing forces into 
                             a virtual slope we had to ride up and down to get around our loop. Hence the name
-                            'Virtual Elevation'. We can then make some educated guesses about what Crr and CdA 
-                            were and plot the associated virtual profile. 
+                            'Virtual Elevation'. 
+                        <p>
+                        </p>
+                            We can then make some educated guesses about what Crr and CdA were and plot the associated 
+                            virtual profile. Now since each lap is performed in a single position and
+                            the physical elevation change at the start and end of a loop is zero we need to adjust 
+                            Crr and CdA until the start and end of a lap in the VE plot are the same.
                         </p>
                         <p>
                             The example shown to the right (copyright and courtesy of Dr Chung) shows a field test
                             of 7 laps plotted with different estimates for Crr and CdA; the last 2 laps yielding
-                            a CdA of 0.4 and Crr of 0.006.
+                            a CdA of 0.4 and Crr of 0.006. The top left plot is clearly wrong as each lap finishes
+                            higher than preceding; CdA is too low. The top right shows the CdA has gone up but still
+                            each lap finishes slightly higher than it started. Its only in the bottom two plots
+                            that we can see a level start and end for any given lap; those are the laps that we 
+                            performed with the associated CdA and Crr.
                         </p>
                         <p>
                             This is what Aerolab in GoldenCheetah does; it plots this virtual elevation from a ride 
