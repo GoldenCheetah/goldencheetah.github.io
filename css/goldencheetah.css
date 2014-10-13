@@ -384,6 +384,13 @@ body {
     content:'Show details >>'; 
 }
 
+.in.collapse+a.btn.showmore:before { 
+    content:'Hide more <<';
+}
+.collapse+a.btn.showmore:before { 
+    content:'Show more >>'; 
+}
+
 .table-compare {
 	border-spacing: 10px;
     border-collapse: separate;
