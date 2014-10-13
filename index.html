@@ -1490,6 +1490,97 @@
                         </p>
  
 			</div>   
+
+					<h2>Aerodynamics - Virtual Elevation</h2>
+					<div class="" id="viewdetails-aerolab" class="col-lg-12">
+
+						<h3>CdA</h3>
+						<p>
+                            The aerodynamics of a cyclist and their bike has a huge bearing on the maximum 
+                            speed they can get at any given wattage. 
+                        </p>
+                        <p> 
+                            When cycling without a draft, typically during an individual time-trial or 
+                            bike leg of a triathlon, roughly 30% of effort is spent pushing air out of the 
+                            way.  The more streamlined and slippery we can become in the wind the faster 
+                            we go for the same watts.  The drag coefficient for a cyclist is called their 
+                            <code>CdA</code> ; where A indicates it is about frontal area. The lower the 
+                            CdA the more slippery they are.  It can range from 0.49 when sat up on the hoods, 
+                            0.45 when low on the drops and all the way down to 0.28 with aerobars, helmet and 
+                            a TT bike.  Amazingly, Graeme Obree reduced his CdA to 0.17 for his hour record 
+                            but his posture was pretty extreme !
+                        <p>
+                        </p>
+                            Professional athletes spend thousands of dollars, and several days,  testing 
+                            different positions and equipment in a wind-tunnel in an attempt to quantify and 
+                            improve their CdA. The smallest changes in positioning can result in massive 
+                            improvements; in a TT position on aerobars it is possible to see a 10% reduction 
+                            in CdA just from "shrugging". But other changes, like getting very low, might 
+                            make you more slippery but at a cost that your ability to lay down power is 
+                            compromised &mdash; we need to find the tipping points and make tradeoffs with 
+                            testing, and the testing can become endless.
+						</p>
+						<h3>Crr, Rho and Friends</h3>
+                        <p>
+                            Aside from CdA there are a number of other factors that will affect how fast
+                            you go for any given power output.
+                        </p>
+                        <p>
+                            Given we spend so much effort pushing air out of the way it should come as
+                            no surprise that the density of the air ( <code>Rho</code> ) can make a massive 
+                            difference to how fast we go for any given power output. Air gets thinner as 
+                            you go to altitude, its why hour records might be attempted there (lets ignore 
+                            the fact there is also less air to breath). Aside from altitude, air density is 
+                            also affected by humidity, temperature and air pressure; we can calculate the 
+                            air density if we have all three of these.
+                        </p>
+						<p>
+                            Pushing air out of the way isn't the only thing you pedal against, the tyres 
+                            on the road have a coefficient of rolling resistance or <code>Crr</code> ; even 
+                            skinny road tyres might have a range from 0.0025 up to 0.005. Luckily there are 
+                            lots of folks testing them so you don't have to. But changing tyres really can make 
+                            you faster (or slower).
+						</p>
+                        <p>
+                            Remaining factors include; <code>weight</code> if you're riding on the flat 
+                            or downhill then extra weight can be advantageous as momentum and gravity
+                            help you go faster; but as the road tilts upwards its gonna need more
+                            power to overcome. Typically, on a 2% slope an 80kg bike and rider will 
+                            need 233w to maintain 25 km/h, every 1kg of weight extra costs another 
+                            2w to go the same speed. Similarly for 17km/h on 5% and 10km/h on 10% 
+                            every kilo will take 2-3w of power to lift to the top.  
+                        </p>
+                        <p>
+                            And of course, wind is the most obvious problem. Riding with a 20 km/h headwind 
+                            or sidewind is no fun; but riding with a 20km/h tailwind is great ! So 
+                            <code>windspeed</code> and just as importantly wind direction ( <code>yaw</code> ) 
+                            can have the biggest impact on how fast we can go for any given power. Lastly 
+                            we have <code>acceleration</code> ; every time you speed up you use power to do 
+                            that, unless you're rolling downhill.
+                        </p>
+
+						<h3>Virtual Elevation</h3>
+						<p>
+                            Ultimately we all want to get faster on the bike. Assuming you have done
+                            all you can to shed unwanted pounds there really isn't much you can do
+                            to change the wind, air density the course profile or gravity. 
+                            That leaves Crr and CdA to work on.  To avoid spending lots of money on 
+                            time in a wind-tunnel there is a practical approach called 'Virtual
+                            Elevation' (VE) devised by Dr Robert Chung that can be done outside using a 
+                            power meter and speed sensor.
+						</p>
+                        <p>
+                            In the past, in order To calculate CdA we needed to know accurate values for; 
+                            weight, speed, windspeed and yaw, power Crr, Rho, incline, gravity and acceleration.
+                            So a field test would typically be performed on a still day on a flat road; 
+                            removing the need for the windspeed, yaw, incline and gravity terms. Then looking
+                            at speed for each run it would be possible to check if a position was faster
+                            or slower. But riding without wind and hills was almost impossible to do outside 
+                            of a velodrome. And even then velodromes have problems because (believe it or not) 
+                            riding around the track you (and others there at the same time) will create your
+                            own tailwind !
+                        </p>
+            </div>
 		</section>
 		
 		<section id="parallax6" class="section" data-stellar-background-ratio="0.5">
