@@ -26,8 +26,8 @@
                 } 
                 return query_string;
             } ();
-        
-            document.write( '<code>' + QueryString.oauth_verifier + '</code>' );
+            var tag = 'code';
+            document.write( '<' + tag + '>' + QueryString.oauth_verifier + '</' + tag + '>' );
         </script>
 	</head>
                                 
