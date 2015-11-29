@@ -4,77 +4,67 @@
   <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
 </head>
 <body>
-<p>We are proud to announce that GoldenCheetah v3.2 was released today.</p>
-<p>Version 3.2 contains lots of bug fixes and functional changes to support Running and Swimming, Interval discovery and analysis, Moxy and Vector support and many Training View enhancements.</p>
-<p>We have moved to storing activity data in a native JSON format. This means data will be converted when imported but the originals are kept too (in case you need the original data for any reason). When you first run version 3.2 it will upgrade the athlete data. We therefore recommend you TAKE A BACKUP before you install and use Version 3.2.</p>
-<p>It represents over 1,400 code changes made since the last release by a development team from all corners of the globe. Ale Martinez has been solely responsible for implementing support for running and swimming, Jörn Rischmueller has implemented Vector support and all the heavy lifting for the upgrade and native file format. Lastly, Damien Grauser has implemented the interval discovery and analysis features.</p>
+<p>We are proud to announce that GoldenCheetah v3.3 was released today.</p>
+<p>Version 3.3 is an incremental release and contains a handful of new features plus some fixes for some of the more severe bugs found in version 3.2</p>
 <h2><b>MAJOR NEW FEATURES</b></h2>
-<h3><b>Multisport Support</b></h3>
-<p>Support has now been included for running and swimming; including the CV and D’ as well as new charts, metrics and device support.</p>
 <ol>
   <li>Pace Zones - Running and Swimming</li>
-  <li>Garmin Dynamics - Running and Cycling Dynamics</li>
-  <li>GOVSS, SwimScore, TriScore et al</li>
-  <li>CV Model</li>
+  <li>Sync across PCs via Dropbox cloud storage</li>
+  <li>Sync via local folder, thumb drive, Google mounted drive etc</li>
+  <li>Added Daniels VDOT and T-Pace tools for Running</li>
+  <li>User Formulas</li>
+  <li>Restful API Web-Services for integration with R,Matlab,Orange,Tableau etc</li>
+  <li>Support FE-C trainer</li>
+  <li>Monark ERG Support</li>
+  <li>Support Stryd Power Meter for Running</li>
+  <li>BSX Insight 2 support</li>
+  <li>Ambit SML import support</li>
+  <li>RLV Support, playback to riding speed.</li>
+  <li>Video Overlays in Train View</li>
+  <li>SportsPlusHealth upload support</li>
+  <li>Backup and Autobackup</li>
+  <li>Better swim workout support incl. lap workouts</li>
+  <li>SrmRideFile: v9 support (SRM PC8)</li>
+  <li>Add new language support: Chinese(Traditional)</li>
+  <li>GPL v3 License</li>
 </ol>
-<h3><b>Moxy Support</b></h3>
-<p>The Moxy Muscle Oxygen Monitor is supported including direct download, data series charting and new metrics.</p>
+<h2><b>SEVERE BUG FIXES</b></h2>
 <ol>
-  <li>Direct download from device</li>
-  <li>Import CSV (moxy + peripedal) and FIT format</li>
-  <li>Merge Tool changes</li>
-  <li>Shift S+C to Smo2/tHB</li>
-  <li>Derive HHb and O2Hb from SmO2/tHb</li>
-  <li>Chartride, 2d, 3d, histogram</li>
+    <li>Fix 3DP file import 'hang'</li>
+    <li>Joule GPS+ import issues</li>
+    <li>Checkbox metadata fields not saved, ^S save errors</li>
+    <li>Fix GPU battery drain on Mac OSX</li>
+    <li>Fix more than 8 HR Zones Crash</li>
+    <li>Fix 'Fix Elevation' SEGV</li>
+    <li>Fix Interval Search SEGV on High Power</li>
+    <li>DataProcessor 'Auto' runs on import only</li>
+    <li>Fix Memory Exhaustion on Mass Import/Sync</li>
+    <li>Fix SEGV when sharing activity on Strava with no internet</li>
+    <li>Fix IntervalNavigator SEGV</li>
+    <li>Fix SEGV LTM Edit</li>
 </ol>
-<h3><b>Train View Update</b></h3>
-<p>The train view has been updated to support real-time viewing of W’bal and new series from Garmin pedal power meters as well as support for the Tacx Vortex turbo.</p>
+<h2><b>MINOR NEW FEATURES</b></h2>
 <ol>
-  <li>Tacx Vortex Electronic Trainer Support</li>
-  <li>Vector Support</li>
-  <li>Moxy Support</li>
-  <li>W'bal as you ride</li>
-  <li>New file format and import process at end of ride</li>
-  <li>New turbos supported</li>
-</ol>
-<h3><b>Interval Discovery and Analysis</b></h3>
-<p>Intervals are automatically discovered in rides and some new options to match and visualise them.</p>
-<ol>
-  <li>Interval Navigator in Performance Plot</li>
-  <li>Interval Auto-discovery; Peaks, Hills, TTE/Sustained, Routes</li>
-  <li>Plot Sustained Intervals on CP chart (ride, season, compare)</li>
-  <li>Sustained Time In Zone metrics</li>
-  <li>Create intervals on the map</li>
-  <li>Drop Segments onto Compare Pane to add all matching intervals</li>
-</ol>
-<h2><b>OTHER CHANGES</b></h2>
-<h3><b>General Updates</b></h3>
-<ol>
-  <li>Improved Merge</li>
-  <li>PMC Any Stress Metric</li>
-  <li>W'bal Zones</li>
-  <li>PMC Metrics on Summary and in Filters</li>
-  <li>CP Estimates use rolling 6 weeks not 2 calendar months</li>
-  <li>Added Ward-Smith PD Model</li>
-  <li>Lots more Fix Tools (Elevation, Power, Moxy etc)</li>
-  <li>Automatic importing of files</li>
-  <li>Hide curves via legend in LTM Plot</li>
-  <li>Improved performance for W'bal calculation</li>
-  <li>Export 'heatmap' of rides for Google Maps</li>
-  <li>Core Temperature Data Series Added</li>
-  <li>Improved Chart editing in Trend View</li>
-</ol>
-<h3><b>Technical Updates</b></h3>
-<ol>
-  <li>NoSQL - RideCache in memory with backing store</li>
-  <li>Directory Structure - /cache /config /activities etc</li>
-  <li>Use Native File Format - json</li>
-  <li>CLucene deprecated</li>
-  <li>KQOauth lib replaces libOAuth</li>
-  <li>File Quarantining</li>
-  <li>Google Calendar API v2</li>
-  <li>Measures db deprecated for a Withings cache</li>
-  <li>Preferences changes update optimized</li>
+    <li>Delete multiple workouts</li>
+    <li>Configure CP and FTP separately</li>
+    <li>FixSmO2: Add a tool to remove anomalies in SmO2 data</li>
+    <li>Recognise more Garmin devices based on FIT SDK</li>
+    <li>Fix Freewheeling Tool</li>
+    <li>Added W'bal Work In Zone Metrics</li>
+    <li>Add W'bal Zones - Time above CP</li>
+    <li>Added Autoimport Stealth/Background Mode</li>
+    <li>TrainMode - Use Multimedia Keys</li>
+    <li>Fix Speed from Distance tool</li>
+    <li>Delete Athlete now supported</li>
+    <li>Settings stored in athlete folder config directory</li>
+    <li>Bugfix merge of hrm and gpx</li>
+    <li>Mass update metadata with set, isset and unset commands</li>
+    <li>Add a Derive Distance tool (from GPS position)</li>
+    <li>Read R-R data from polar hrm files</li>
+    <li>Add User parameters for Bike Weight and CRR to Power Estimation Tool</li>
+    <li>Multiple fixups for DataFilter expressions and precedence logic</li>
+    <li>LTM Filter for a curve</li>
+    <li>Rename Route</li>
 </ol>
 </body>
 </html>
