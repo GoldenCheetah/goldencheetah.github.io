@@ -1,6 +1,6 @@
 
 (function ($) {
- 
+
     $("[data-toggle='tooltip']").tooltip({html:true});
  
     $(document).delegate('*[data-toggle="ekkoLightbox"]', 'click', function(event) {
@@ -107,6 +107,32 @@
             });
 
         }
+
+
+    // OS detection
+	var _os_ = (function(){
+                var userAgent = navigator.userAgent.toLowerCase();
+                return {
+                isWin2K: /windows nt 5.0/.test(userAgent),
+                isXP: /windows nt 5.1/.test(userAgent),
+                isVista: /windows nt 6.0/.test(userAgent),
+                isWin7: /windows nt 6.1/.test(userAgent),
+                isMac105: /Mac OS X 10_5/.test(userAgent),
+                isMac106: /Mac OS X 10_6/.test(userAgent),
+                isMac107: /Mac OS X 10_7/.test(userAgent),
+                isMac108: /Mac OS X 10_8/.test(userAgent),
+                isMac1012: /mac os x 10_12/.test(userAgent),
+                };
+                }());
+
+	// get OS shorthand names
+
+	var OS;
+
+    if(_os_.isMac1012){
+        OS = "Mac OS Sierra";
+        $("#recommended-macsierra").show()
+	}
 	
 
 })(jQuery);
