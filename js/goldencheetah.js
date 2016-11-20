@@ -117,6 +117,7 @@
                 isXP: /windows nt 5.1/.test(userAgent),
                 isVista: /windows nt 6.0/.test(userAgent),
                 isWin7: /windows nt 6.1/.test(userAgent),
+                isMac: /Mac OS X 10_/.test(userAgent),
                 isMac105: /Mac OS X 10_5/.test(userAgent),
                 isMac106: /Mac OS X 10_6/.test(userAgent),
                 isMac107: /Mac OS X 10_7/.test(userAgent),
@@ -130,9 +131,14 @@
 	var OS;
 
     if(_os_.isMac1012){
-        OS = "Mac OS Sierra";
-        $("#recommended-macsierra").show()
+        OS = "MacOS Sierra";
+        $("#recommended-download").removeClass("hidden")
+        $("#OS").text(OS);
 	}
-	
+    else if(_os_.isMac){
+        OS = "MacOS";
+        $("#recommended-download").removeClass("hidden")
+	}
+
 
 })(jQuery);
