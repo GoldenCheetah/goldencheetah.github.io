@@ -117,11 +117,11 @@
                 isXP: /windows nt 5.1/.test(userAgent),
                 isVista: /windows nt 6.0/.test(userAgent),
                 isWin7: /windows nt 6.1/.test(userAgent),
-                isMac: /Mac OS X 10_/.test(userAgent),
-                isMac105: /Mac OS X 10_5/.test(userAgent),
-                isMac106: /Mac OS X 10_6/.test(userAgent),
-                isMac107: /Mac OS X 10_7/.test(userAgent),
-                isMac108: /Mac OS X 10_8/.test(userAgent),
+                isMac: /mac os x 10_/.test(userAgent),
+                isMac105: /mac os x 10_5/.test(userAgent),
+                isMac106: /mac os x 10_6/.test(userAgent),
+                isMac107: /mac os x 10_7/.test(userAgent),
+                isMac108: /mac os x 10_8/.test(userAgent),
                 isMac1012: /mac os x 10_12/.test(userAgent),
                 };
                 }());
@@ -130,15 +130,10 @@
 
 	var OS;
 
-    if(_os_.isMac1012){
-        OS = "MacOS Sierra";
-        $("#recommended-download").removeClass("hidden")
-        $("#OS").text(OS);
-	}
-    else if(_os_.isMac){
+    if(_os_.isMac){
         OS = "MacOS";
-        $("#recommended-download").removeClass("hidden")
-	}
+        $("#recommended-download-mac").removeClass("hidden")
+    }
 
 
 })(jQuery);
