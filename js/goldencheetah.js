@@ -29,14 +29,7 @@
 			$("html, body").animate({ scrollTop: 0 }, 1000);
 				return false;
 		});
-	
 
-	// local scroll
-	//jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
-    jQuery('.jumbotron').localScroll({hash:true, offset: {top: 0},duration: 900, easing:'easeInOutExpo'});
-
-	
-	
         $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
