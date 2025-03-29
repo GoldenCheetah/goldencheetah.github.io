@@ -1,477 +1,129 @@
 
-/*===========================
-  --- Header & menu ----
-=========================== */
-.navbar {
-	line-height: 100px;
-	height: 100px;
-	background-color: rgba(201,94,12,0.8);
-	display: block;
-	vertical-align: middle;
-	text-align: center;
-	margin-bottom: 0;
-	padding-bottom:0;
+
+/*
+ * Custom translucent site header
+ */
+
+ nav.site-header {
+  background-color: rgba(0, 0, 0, .82);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+  -webkit-text-fill-color: rgba(254, 177, 1, 1);
+  color: rgba(254, 177, 1, 1);
+  font-weight: bold;
+}
+.navsite-header .nav-button{
+  -webkit-text-fill-color: rgba(254, 177, 1, 1);
+  color: rgba(254, 177, 1, 1);
+  text-decoration: none;
+  font-weight: bold;
+  transition: ease-in-out color .15s;
+}
+nav.site-header .nav-button:hover {
+  -webkit-text-fill-color: rgba(254, 177, 1, .85);
+  color: rgba(254, 177, 1, .85);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(254, 177, 1, 1);
+}
+nav.site-header  a.active {
+  color: rgba(254, 177, 1, 1);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(254, 177, 1, 1);
 }
 
-.navbar .navbar-collapse {
-	margin-bottom: 0;
-	padding-bottom:0;
+/* Some custom classes */
+.logo{
+  border-bottom: none;
+}
+.testimonial{
+  background-color: rgba(254, 177, 1, 1);
+}
+.text-yellow{
+  color: rgba(254, 177, 1, 1);
+}
+.hidden{
+  display:none!important
+}
+.blue{
+  border-bottom: 5px solid rgba(30, 144, 255, 1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .15);
+}
+.pink{
+  border-bottom: 5px solid rgba(255, 0, 255, 1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .15);
+}
+.gold{  
+  border-top: 5px solid rgba(254, 177, 1, 1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .15);
+}
+.bordergold{
+  border: 5px solid rgba(30, 144, 255, 1);
+  border-radius: 10px;
+  background: rgba(254, 177, 1, 1);
 }
 
-.tutorials {
-    background-color: rgba(201,94,12,0.8);
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
 }
 
-.nav li {
-	height: 100%;
-	line-height: 100%;
-	margin-bottom: 0;
-	padding-bottom:0;
+.overflow-hidden { overflow: hidden; }
+
+.parallax1 {
+  /* The image used */
+  background-image: url(../img/photo02.jpg);
+  /* Full height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url(../img/photo01.jpg);
+  /* Full height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.nav>li>a {
-	display: table-cell;
-	height: 100%;
-	line-height: 100%;
-	vertical-align: middle;
-	color: #fff;
-	font-weight: 700;
-	font-size: 13px;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 
-.nav>li>a:hover {
-	color: #FFE35B;
-	background: none;
-}
-
-.navbar-nav {
-	float: right;
-	margin-bottom: 0;
-	padding-bottom:0;
-}
-
-.navbar .navbar-nav > .active > a {
-	color: #ff0;
-}
-.navbar .navbar-nav > .active > a {
-	padding-bottom: 22px;
-}
-
-h1 a.navbar-brand {
-    padding-top: 0px;
-    margin-top: -10px;
-	font-size: 24px;
-	color: #FFA500;
-	font-weight: 900;
-	text-shadow: none;
-}
-
-.navbar-brand {
-	padding: 0;
-	display: table-cell;
-	vertical-align: middle;
-	line-height: 90px;
-}
-
-.navbar-brand img {
-	vertical-align: middle;
-}
-
-.navbar-toggle {
-	padding: 0;
-	margin: 0;
-	width: 80px;
-}
-
-.navbar-collapse.in {
-	margin-top: -5px !important;
-}
-
-footer {
-	line-height: 50px;
-	height: 50px;
-	background-color: #000;
-	display: block;
-	vertical-align: middle;
-	text-align: left;
-	margin-bottom: 0;
-	padding-bottom:0;
-}
-
-.bs-docs-footer{
-    padding-top:40px;
-    padding-bottom:40px;
-    margin-top:100px;
-    color:#767676;
-    text-align:center;
-    border-top:1px solid #e5e5e5
-}
-
-.bs-docs-footer-links{
-    padding-left:0;
-    margin-top:20px;
-}
-
-.bs-docs-footer-links li{
-    display:inline;
-    padding:0 2px;
-}
-
-.bs-docs-footer-links li:first-child{
-    padding-left:0;
-}
-
-.bs-docs-social{
-    margin-bottom:20px;
-    text-align:center;
-}
-
-.bs-docs-social-buttons{
-    display:inline-block;
-    padding-left:0;
-    margin-bottom:0;
-    list-style:none;
-}
-
-.bs-docs-social-buttons li{
-    display:inline-block;
-    padding:5px 8px;
-    line-height:1;
-}
-
-.bs-docs-social-buttons .twitter-follow-button{
-    width:225px!important;
-}
-
-.bs-docs-social-buttons .twitter-share-button{
-    width:98px!important;
-}
-
-.github-btn{
-    overflow:hidden;
-    border:0
-}
-
-/*===========================
-  --- Sections ----
-=========================== */
-
-section.section {
-	margin:0;
-	padding: 40px 0 0 0;
-}
-
-
-
-
-
-
-section .row {
-	padding: 0 0 60px 0;
-}
-
-#section-home {
-    min-height:600px;
-	background-color: #ddd;
-    color: #fff;
-}
-
-.jumbotron {
-    background-color: #ddd;
-    color: #000;
-    min-height:580px;
-    margin-bottom: 0px;
-}
-
-#section-home h1,h2,h3 {
-	color: #000;
-}
-
-#section-home .btn {
-    color: #fff;
-}
-
-#section-home a {
-	color: #FFA500;
-}
-
-.text-warning {
-	color: #A15734;
-}
-
-#section-download {
-    min-height:600px;
-	color: #fff;
-	background-color: #555; /* #fff7cd */
-}
-
-#section-download h1 {
-	color: #f5a503;
-}
-
-#section-download h3 {
-	color: #f5a503; /* aeee00 */
-}
-
-#section-download a {
-	color: #01b0f0;
-}
-
-
-
-#section-features {
-    min-height:600px;
-	color: #fff;
-	background-color: #333;
-}
-
-#section-features h1 {
-	color: #0ff; /* ff3588 */
-}
-
-#section-features h3 {
-	color: #0ff;
-}
-
-#section-tutorials {
-    min-height:600px;
-	color: #fff;
-	background-color: #555;
-}
-
-#section-tutorials h1 {
-	color: #aeee00;
-}
-
-
-#section-contributor {
-    min-height:600px;
-	color: #fff;
-	background-color: #333 ; /* rgba(70,150,255,1) */
-}
-
-#section-contributor h1 {
-	color: #8000FF;
-}
-
-#section-science {
-    min-height:600px;
-	color: #fff;
-	background-color: #555;
-}
-
-#section-science h1 {
-	color: #ff3588;
-}
-
-#section-science h2 {
-	color: #ff3588;
-}
-
-#section-science h3 {
-	color: #ff3588;
-}
-
-#section-science .btn {
-    color: #fff;
-	background-color: #ff3588;
-	font-size: 11px;
-}
-
-#section-more {
-    min-height:100px;
-	color: #000;
-	background-color: #ddd;
-}
-
-#section-more h1 {
-	color: #0000FF;
-}
-
-/* Tooltp */
-.tooltip-inner {
-    max-width: 400px;
-
-}
-
-.simplebox {
-    color: #000;
-    background-color: #f7b513;
-    border-color: #c70503;
+  code{
+    border: 3px solid rgba(255, 0, 255, 1);
     border-radius: 10px;
+    /*background: rgba(254, 177, 1, 1);*/
+    padding: 5px 5px 3px 5px
+  }
+.tooltip-inner {
+    min-width: 150px; /* Set your desired minimum width */
+    max-width: 400px; /* Optional: Set a max-width to prevent it from getting too large */
+    /*white-space: nowrap;*/ /* Prevent text from wrapping */
 }
-
-.simplebox a {
-    color: #01b0f0;
+.table-compare{
+  white-space: nowrap; /* Prevent text from wrapping */
 }
-
-
-/* ==========================
- --- Parallax ---
-============================= */
-
-
-#parallax1{
-    min-height:300px;
-	color: #000;
-    background-color: #f5a503;
-	/*background-image: url(../img/parallax01.jpg);*/
-	padding-top: 20px;
-	padding-bottom:40px;
-	position:relative;
-}
-
-#parallax1 h1,h2,h3 {
-	color: #000;
-}
-
-#parallax2 {
-    min-height:20px;
-	color: #000;
-    background-color: #0ff; /* #ff3588 */
-	/*background-image: url(../img/photo02.jpg);*/
-	/*padding-top: 20px;
-	padding-bottom:40px;*/
-	position:relative;
-}
-
-#parallax2photo {
-    min-height:300px;
-	color: #000;
-    background-color: #8000FF;
-	background-image: url(../img/photo02.jpg);
-    background-size:   cover;  
-	/*background-size: 800px;
-	background-repeat: no-repeat;
-	background-position: center; */
-	position:relative;
-}
-
-#parallax3 {
-    min-height:300px;
-	color: #000;
-    background-color: #aeee00;
-	/*background-image: url(../img/parallax03.jpg);*/
-	padding-top: 20px;
-	padding-bottom:40px;
-	position:relative;
-}
-
-#parallax4 {
-    min-height:20px;
-	color: #000;
-    background-color: #8000FF;
-	/*background-image: url(../img/photo01.jpg);
-	background-size: 800px;
-	background-repeat: no-repeat;
-	background-position: center; */
-	/*padding-top: 20px;
-	padding-bottom:40px;*/
-	position:relative;
-}
-
-#parallax4photo {
-    min-height:300px;
-	color: #000;
-    background-color: #8000FF;
-	background-image: url(../img/photo01.jpg);
-    background-size:   cover;
-	/*background-size: 800px;
-	background-repeat: no-repeat;
-	background-position: center; */
-	padding-top: 20px;
-	//padding-bottom:40px;
-	position:relative;
-}
-
-#parallax5 {
-    min-height:300px;
-	color: #000;
-    background-color: #ff3588;
-	padding-top: 20px;
-	padding-bottom:40px;
-	position:relative;
-}
-
-#parallax6 {
-    min-height:300px;
-	color: #000;
-    background-color: #0000FF;
-	padding-top: 20px;
-	padding-bottom:40px;
-	position:relative;
-}
-
-.box {
-    position:absolute;
-    left:0;
-    height:100%;
-    background:#09f;
-}
-
-/* Move down content because we have an inital navbar that is 100px tall */
-body {
-  background-color: #000;
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
-
-/* buttons */
-.btn {
-	border: 1;
-	background-color: #A15734; /* #A15734 */
-	border-color: #723E27; /* #723E27 */
-}
-
-.btn:hover {
-	border: 2;
-	background-color: #C55A0A; /* #C55A0A */
-	border-color: #723E27; /* #723E27 */
-}
-
-.in.collapse+a.btn.showdetails:before { 
-    content:'Hide details <<';
-}
-.collapse+a.btn.showdetails:before { 
-    content:'Show details >>'; 
-}
-
-.in.collapse+a.btn.showmore:before { 
-    content:'Less <<';
-}
-.collapse+a.btn.showmore:before { 
-    content:'More >>'; 
-}
-
-.table-compare {
-	border-spacing: 10px;
-    border-collapse: separate;
-	background-color: #FFFFFF;
-	table-layout: fixed;
-    width: 400px;
-	float:right;
-	margin-left:10px;
-	-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-
-.table-compare th {
-    overflow: hidden;
-    width: 150px;
-}
-
-.compare1 {
-	color:red;
-	text-align:right;
-}
-
-.compare2 {
-	color:blue;
-	text-align:left;
-}
-
-

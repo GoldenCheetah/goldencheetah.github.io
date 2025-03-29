@@ -1,132 +1,140 @@
+$(document).ready(function() {
+    // Add "active" class to clicked menu item
+	jQuery("nav a").on("click", function () {
+        // Check if the clicked <a> contains the class "logo"
+        if (!$(this).hasClass("logo")) {
+            jQuery("nav a").removeClass("active"); // Remove "active" from all <a>
+            $(this).addClass("active"); // Add "active" only if it's not a logo
+        }
+        else{
+            jQuery("nav a").removeClass("active"); // Remove "active" from all <a>
+        }
+    });
+    // Toggle "More ..." / "Show less"
+	jQuery("a.toggle").on("click", function () {
+        var buttonText = $(this).text();
+        // Check if the clicked <a> contains the class "logo"
+        if ( buttonText == "More ..." ) {
+            $(this).text("Show less"); // Add "active" only if it's not a logo
+        }
+        else if ( buttonText == "Show less" ) {
+            $(this).text("More ..."); // Add "active" only if it's not a logo
+        }
+    });
+    // For Tooltips
+    $('[data-toggle="tooltip"]').tooltip({
+        "html": true,
+        "width": "400px"
+    })        
+    
+    // For vimeo videos
+	$('.popup-vimeo').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
 
-(function ($) {
+		fixedContentPos: false,
+        image: {
+          // options for image content type
+          titleSrc: 'data-title'
+        }
+	});
+    // For single image - NOT gallery
+    $('.popup-link').magnificPopup({
+        type: 'image'
+        // other options
+    });
 
-    $("[data-toggle='tooltip']").tooltip({html:true});
- 
-    $(document).delegate('*[data-toggle="ekkoLightbox"]', 'click', function(event) {
-                      event.preventDefault();
-                      return $(this).ekkoLightbox({
-                                                  onShown: function() {
-                                                  if (window.console) {
-                                                  return console.log('Checking our the events huh?');
-                                                  }
-                                                  }
-                                                  });
-                      });
- 
-    // Initialisation document.ready
-    // Tooltips
- 
-
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-		});
-		$('.scrollup').click(function(){
-			$("html, body").animate({ scrollTop: 0 }, 1000);
-				return false;
-		});
-
-        $("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
+    // For all galleries - it need to use "each()" to detect all galleries
+    $('.popup-gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            },
+            image: {
+              // options for image content type
+              titleSrc: 'data-title'
+            }
+        });
+    });
+    // Changes Footer text "Since 2006" to "© 2006 - 2025". "Since 2006" in case
+    // someone doesn't have JS turned on.
+    var since = $("small.since").text();
+    if (since.trim() === "Since 2006") {  // .trim() ensures extra spaces don't break the condition
+        const currentYear = new Date().getFullYear();
+        $("small.since").html("&copy; 2006 - " + currentYear);  // Use .html() for &copy;
+    }
+});
+// Scroll menu selection
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("div[id^='section-']");
+    const menuLinks = document.querySelectorAll("nav a");
+  
+    // We'll use a threshold list with several steps so that we get updates
+    // at many intersection ratio changes.
+    const thresholds = [];
+    for (let i = 0; i <= 1.0; i += 0.01) {
+      thresholds.push(i);
+    }
+  
+    const observerOptions = {
+      root: null, // use the viewport as the container
+      threshold: thresholds
+    };
+  
+    // This object will keep track of the latest intersectionRatio for each section.
+    const sectionVisibility = {};
+  
+    // Initialize all sections' ratio to 0
+    sections.forEach(section => {
+      sectionVisibility[section.id] = 0;
+    });
+  
+    const observer = new IntersectionObserver((entries) => {
+      // Update our record for each section that changed.
+      entries.forEach(entry => {
+        sectionVisibility[entry.target.id] = entry.intersectionRatio;
+      });
+  
+      // Find the section with the highest intersection ratio.
+      let mostVisibleId = null;
+      let maxRatio = 0;
+      for (const [id, ratio] of Object.entries(sectionVisibility)) {
+        if (ratio > maxRatio) {
+          maxRatio = ratio;
+          mostVisibleId = id;
+        }
+      }
+  
+      // Remove 'active' from all links.
+      menuLinks.forEach(link => link.classList.remove("active"));
+  
+      // Only add active if the best ratio is above 0 (i.e. at least a bit visible)
+      if (mostVisibleId && maxRatio > 0) {
+        const activeLink = document.querySelector(`nav a[href="#${mostVisibleId}"]`);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+      }
+    }, observerOptions);
+  
+    // Start observing each section.
+    sections.forEach(section => observer.observe(section));
 });
 
-	if (Modernizr.mq("screen and (max-width:1024px)")) {
-			jQuery("body").toggleClass("body");
-			
-	} else {
-		var s = skrollr.init({
-			mobileDeceleration: 1,
-			edgeStrategy: 'set',
-			forceHeight: true,
-			smoothScrolling: true,
-			smoothScrollingDuration: 300,
-				easing: {
-					WTF: Math.random,
-					inverted: function(p) {
-						return 1-p;
-					}
-				}
-			});
-	}
-
-
-
-	//scroll menu
-	jQuery('.appear').appear();
-	jQuery(".appear").on("appear", function(data) {
-			var id = $(this).attr("id");
-			jQuery('.nav li').removeClass('active');
-			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");
-            
-            if (id == "section-download") {
-                //jQuery(".navbar").addClass("screenshots");
-                //jQuery(".navbar").css('background-color','red');
-                //jQuery("section-download").css('background-color','red');
-
-            }
-            else {
-                //jQuery(".navbar").removeClass("screenshots");
-
-                //if (jQuery(".navbar").css('background-color') == 'rgb(255, 0, 0)')
-                //   jQuery(".navbar").css('background-color','black');
-            }
-		});
-
-
-		//parallax
-        var isMobile = false;
-
-        if(Modernizr.mq('only all and (max-width: 1024px)') ) {
-            isMobile = true;
-        }
-
-        
-        if (isMobile == false && ($('#parallax1').length  ||isMobile == false &&  $('#parallax2').length ||isMobile == false &&  $('#parallax3').length))
-        {
-
-
-            $(window).stellar({
-                responsive:true,
-                scrollProperty: 'scroll',
-                parallaxElements: false,
-                horizontalScrolling: false,
-                horizontalOffset: 0,
-                verticalOffset: 0
-            });
-
-        }
-
-
-    // OS detection
-	var _os_ = (function(){
-                var userAgent = navigator.userAgent.toLowerCase();
-                return {
-                isWin2K: /windows nt 5.0/.test(userAgent),
-                isXP: /windows nt 5.1/.test(userAgent),
-                isVista: /windows nt 6.0/.test(userAgent),
-                isWin7: /windows nt 6.1/.test(userAgent),
-                isMac: /mac os x 10_/.test(userAgent),
-                isMac105: /mac os x 10_5/.test(userAgent),
-                isMac106: /mac os x 10_6/.test(userAgent),
-                isMac107: /mac os x 10_7/.test(userAgent),
-                isMac108: /mac os x 10_8/.test(userAgent),
-                isMac1012: /mac os x 10_12/.test(userAgent),
-                };
-                }());
-
-	// get OS shorthand names
-
-	var OS;
-
-    if(_os_.isMac){
-        OS = "MacOS";
-        $("#recommended-download-mac").removeClass("hidden")
+// Menu selection for refresh / reload
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the fragment identifier (without "#")
+    let hash = window.location.hash.substring(1);
+    // Remove "active" class from all nav links
+    document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+    // Find the <a> tag where href matches the hash and add "active" class
+    let targetLink = document.querySelector(`nav a[href="#${hash}"]`);
+    if (targetLink && !targetLink.classList.contains("logo")) {
+        targetLink.classList.add("active");
     }
-
-
-})(jQuery);
+});
