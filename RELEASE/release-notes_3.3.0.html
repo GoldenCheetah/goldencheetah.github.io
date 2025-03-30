@@ -1,69 +1,149 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
-</head>
-<body>
-<p>We are proud to announce that GoldenCheetah v3.3 was released today.</p>
-<p>Version 3.3 is an incremental release and contains a handful of new features plus some fixes for some of the more severe bugs found in version 3.2</p>
-<h2><b>MAJOR NEW FEATURES</b></h2>
-<ol>
-  <li>Sync across PCs via Dropbox cloud storage</li>
-  <li>Sync via local folder, thumb drive, Google mounted drive etc</li>
-  <li>Added Daniels VDOT and T-Pace tools for Running</li>
-  <li>User Formulas</li>
-  <li>Restful API Web-Services for integration with R,Matlab,Orange,Tableau etc</li>
-  <li>Support FE-C trainer</li>
-  <li>Monark ERG Support</li>
-  <li>Support Stryd Power Meter for Running</li>
-  <li>BSX Insight 2 support</li>
-  <li>Ambit SML import support</li>
-  <li>RLV Support, playback to riding speed.</li>
-  <li>Video Overlays in Train View</li>
-  <li>SportsPlusHealth upload support</li>
-  <li>Backup and Autobackup</li>
-  <li>Better swim workout support incl. lap workouts</li>
-  <li>SrmRideFile: v9 support (SRM PC8)</li>
-  <li>Add new language support: Chinese(Traditional)</li>
-  <li>GPL v3 License</li>
-</ol>
-<h2><b>SEVERE BUG FIXES</b></h2>
-<ol>
-    <li>Fix 3DP file import 'hang'</li>
-    <li>Joule GPS+ import issues</li>
-    <li>Checkbox metadata fields not saved, ^S save errors</li>
-    <li>Fix GPU battery drain on Mac OSX</li>
-    <li>Fix more than 8 HR Zones Crash</li>
-    <li>Fix 'Fix Elevation' SEGV</li>
-    <li>Fix Interval Search SEGV on High Power</li>
-    <li>DataProcessor 'Auto' runs on import only</li>
-    <li>Fix Memory Exhaustion on Mass Import/Sync</li>
-    <li>Fix SEGV when sharing activity on Strava with no internet</li>
-    <li>Fix IntervalNavigator SEGV</li>
-    <li>Fix SEGV LTM Edit</li>
-</ol>
-<h2><b>MINOR NEW FEATURES</b></h2>
-<ol>
-    <li>Delete multiple workouts</li>
-    <li>Configure CP and FTP separately</li>
-    <li>FixSmO2: Add a tool to remove anomalies in SmO2 data</li>
-    <li>Recognise more Garmin devices based on FIT SDK</li>
-    <li>Fix Freewheeling Tool</li>
-    <li>Added W'bal Work In Zone Metrics</li>
-    <li>Add W'bal Zones - Time above CP</li>
-    <li>Added Autoimport Stealth/Background Mode</li>
-    <li>TrainMode - Use Multimedia Keys</li>
-    <li>Fix Speed from Distance tool</li>
-    <li>Delete Athlete now supported</li>
-    <li>Settings stored in athlete folder config directory</li>
-    <li>Bugfix merge of hrm and gpx</li>
-    <li>Mass update metadata with set, isset and unset commands</li>
-    <li>Add a Derive Distance tool (from GPS position)</li>
-    <li>Read R-R data from polar hrm files</li>
-    <li>Add User parameters for Bike Weight and CRR to Power Estimation Tool</li>
-    <li>Multiple fixups for DataFilter expressions and precedence logic</li>
-    <li>LTM Filter for a curve</li>
-    <li>Rename Route</li>
-</ol>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+        <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/goldencheetah.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <nav id="section-navbar" class="site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 logo mx-auto" href="#top">
+                <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+            </a>
+            <a class="nav-button position-absolute mr-0 py-4 mt-2 d-md-inline-block small font-weight-bold" href="https://www.goldencheetah.org">< Back to Home page</a>
+        </div>
+    </nav>
+
+    <div id="section-top" class="p-3 p-md-5 m-md-3 bg-light blue">
+        <div class="col-md p-l-5 mt-0 mx-auto">
+            <h1 class="font-weight-bold mb-1">GoldenCheetah v3.3</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="bg-light text-left overflow-hidden">
+                  <p>We are proud to announce that GoldenCheetah v3.3 was released today.</p>
+                  <p>Version 3.3 is an incremental release and contains a handful of new features plus some fixes for some of the more severe bugs found in version 3.2</p>
+
+                  <h2>MAJOR NEW FEATURES</h2>
+                  <ol>
+                    <li>Sync across PCs via Dropbox cloud storage</li>
+                    <li>Sync via local folder, thumb drive, Google mounted drive etc</li>
+                    <li>Added Daniels VDOT and T-Pace tools for Running</li>
+                    <li>User Formulas</li>
+                    <li>Restful API Web-Services for integration with R,Matlab,Orange,Tableau etc</li>
+                    <li>Support FE-C trainer</li>
+                    <li>Monark ERG Support</li>
+                    <li>Support Stryd Power Meter for Running</li>
+                    <li>BSX Insight 2 support</li>
+                    <li>Ambit SML import support</li>
+                    <li>RLV Support, playback to riding speed.</li>
+                    <li>Video Overlays in Train View</li>
+                    <li>SportsPlusHealth upload support</li>
+                    <li>Backup and Autobackup</li>
+                    <li>Better swim workout support incl. lap workouts</li>
+                    <li>SrmRideFile: v9 support (SRM PC8)</li>
+                    <li>Add new language support: Chinese(Traditional)</li>
+                    <li>GPL v3 License</li>
+                  </ol>
+                  <h2>SEVERE BUG FIXES</h2>
+                  <ol>
+                      <li>Fix 3DP file import 'hang'</li>
+                      <li>Joule GPS+ import issues</li>
+                      <li>Checkbox metadata fields not saved, ^S save errors</li>
+                      <li>Fix GPU battery drain on Mac OSX</li>
+                      <li>Fix more than 8 HR Zones Crash</li>
+                      <li>Fix 'Fix Elevation' SEGV</li>
+                      <li>Fix Interval Search SEGV on High Power</li>
+                      <li>DataProcessor 'Auto' runs on import only</li>
+                      <li>Fix Memory Exhaustion on Mass Import/Sync</li>
+                      <li>Fix SEGV when sharing activity on Strava with no internet</li>
+                      <li>Fix IntervalNavigator SEGV</li>
+                      <li>Fix SEGV LTM Edit</li>
+                  </ol>
+                  <h2>MINOR NEW FEATURES</h2>
+                  <ol>
+                      <li>Delete multiple workouts</li>
+                      <li>Configure CP and FTP separately</li>
+                      <li>FixSmO2: Add a tool to remove anomalies in SmO2 data</li>
+                      <li>Recognise more Garmin devices based on FIT SDK</li>
+                      <li>Fix Freewheeling Tool</li>
+                      <li>Added W'bal Work In Zone Metrics</li>
+                      <li>Add W'bal Zones - Time above CP</li>
+                      <li>Added Autoimport Stealth/Background Mode</li>
+                      <li>TrainMode - Use Multimedia Keys</li>
+                      <li>Fix Speed from Distance tool</li>
+                      <li>Delete Athlete now supported</li>
+                      <li>Settings stored in athlete folder config directory</li>
+                      <li>Bugfix merge of hrm and gpx</li>
+                      <li>Mass update metadata with set, isset and unset commands</li>
+                      <li>Add a Derive Distance tool (from GPS position)</li>
+                      <li>Read R-R data from polar hrm files</li>
+                      <li>Add User parameters for Bike Weight and CRR to Power Estimation Tool</li>
+                      <li>Multiple fixups for DataFilter expressions and precedence logic</li>
+                      <li>LTM Filter for a curve</li>
+                      <li>Rename Route</li>
+                  </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-footer" class="py-3  mx-md-3 gold">
+        <div class="row col-md p-l-5 mx-auto">
+            <div class="col-12 col-md text-center">
+                <a class="py-2" href="https://www.goldencheetah.org">
+                    <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+                </a>
+                <small class="d-block mb-3 text-muted since">Since 2006</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">                        
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe></li>
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Social</h5>
+                <ul class="list-unstyled text-small text-muted">            
+                    <li class="follow-btn"><a href="https://twitter.com/goldencheetah" class="twitter-follow-button text-muted" data-link-color="#0069D6" data-show-count="true">Follow @goldencheetah</a></li>
+                    <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button text-muted" data-url="http://goldencheetah.org" data-count="horizontal" data-via="goldencheetah" data-related="goldencheetah">Tweet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/holder.min.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/goldencheetah.js"></script>
+    <script>
+        window.twttr = (function (d,s,id) {
+                        var t, js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+                        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+                        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+                        }(document, "script", "twitter-wjs"));
+    </script>
+  </body>
 </html>

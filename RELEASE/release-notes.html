@@ -1,127 +1,204 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
-</head>
-<body>
-<p>We are proud to announce the release of version 3.6 of GoldenCheetah.</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<p>After 3 years of development and testing this is the public release of version 3.6</p>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
 
-<h2><b>NEW FEATURES</b></h2>
-<ol>
-  <li>New User interface and Navigation model</li>
-  <li>User definable Perspectives, v3.5 layout available as "Legacy" perspective.</li>
-  <li>Overview Chart - Configurable interactive dashboards</li>
-  <li>User Chart - User definable charts using advanced expressions</li>
-  <li>Tasteful themes and named colors</li>
-  <li>Updated Default perspectives and charts</li>
-</ol>
+        <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
 
-<h2><b>Advanced Analytics</b></h2>
-<ol>
-    <li>R and Python Chart Plot to Qt - Native interactive charting from R and Python</li>
-    <li>Local python 3.7 runtime, no need to install separately</li>
-    <li>User expression language enhanced - rich support for vectors and modelling</li>
-    <li>Upload and Download User Metrics to the cloud DB</li>
-</ol>
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/goldencheetah.css" rel="stylesheet">
+    </head>
+    <body>
 
-<h2><b>Improved Multiple Athlete Support</b></h2>
-<ol>
-    <li>New Athlete View to manage multiple athletes</li>
-    <li>Separate dialogs for general options and athlete specific settings</li>
-    <li>Preferences option to start with last opened athlete or choose an athlete dialog</li>
-    <li>Configurable Aerobic Threshold HR/Power/Pace for Polarized 3 Zones analysis</li>
-    <li>Use an existing athlete as template to create a new one</li>
-</ol>
+    <nav id="section-navbar" class="site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 logo mx-auto" href="#top">
+                <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+            </a>
+            <a class="nav-button position-absolute mr-0 py-4 mt-2 d-md-inline-block small font-weight-bold" href="https://www.goldencheetah.org">< Back to Home page</a>
+        </div>
+    </nav>
 
-<h2><b>Devices</b></h2>
-<ol>
-    <li>ErgoFit bike support</li>
-    <li>VMPro V02 measurement</li>
-    <li>Bluetooth BTLE support for Windows 10</li>
-    <li>Bluetooth FTMS support</li>
-    <li>Daum serial devices (Vital and ErgoBike)</li>
-    <li>Wahoo Kickr (Core) control vía BTLE</li>
-    <li>Tacx ANT+ over BTLE for both, erg and slope mode, control</li>
-    <li>Kurt Kinetic Inride and SmartControl over BTLE</li>
-</ol>
+    <div id="section-top" class="p-3 p-md-5 m-md-3 bg-light blue">
+        <div class="col-md p-l-5 mt-0 mx-auto">
+            <h1 class="font-weight-bold mb-1">GoldenCheetah v3.6</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="bg-light text-left overflow-hidden">
+                    <p>We are proud to announce the release of version 3.6 of GoldenCheetah.</p>
+                    <p>After 3 years of development and testing this is the public release of version 3.6</p>
 
-<h2><b>Cloud, Data processing & File Formats</b></h2>
-<ol>
-    <li>Batch processing dialog to update files en masse</li>
-    <li>Configurable zones for any sport (including better support for rowing)</li>
-    <li>Configurable Time Dependent Measures with CSV import, including Nutrition as an example</li>
-    <li>GPS and Altitude Smoothing</li>
-    <li>TTS file type import</li>
-    <li>Upload manual activities to Strava</li>
-    <li>Better handling of Laps and swims from Strava downloads</li>
-    <li>Multisport FIT file support</li>
-    <li>Import HR during lap swims from FIT files</li>
-    <li>Ergo Planet Movie (EPM) file import</li>
-    <li>Updated download from Withings incl. new API</li>
-    <li>Import serial number and battery status for sensors from FIT files</li>
-    <li>Updated Ride with GPS upload using API v2</li>
-    <li>Azum training platform integration</li>
-</ol>
+                    <h2>NEW FEATURES</h2>
+                    <ol>
+                      <li>New User interface and Navigation model</li>
+                      <li>User definable Perspectives, v3.5 layout available as "Legacy" perspective.</li>
+                      <li>Overview Chart - Configurable interactive dashboards</li>
+                      <li>User Chart - User definable charts using advanced expressions</li>
+                      <li>Tasteful themes and named colors</li>
+                      <li>Updated Default perspectives and charts</li>
+                    </ol>
 
-<h2><b>Train</b></h2>
-<ol>
-    <li>Perspectives for Erg, Slope, Map, Video and Editor</li>
-    <li>Live Map Chart with route preview and configurable automatic zoom</li>
-    <li>Next/Previous Lap marker navigation in bottom bar</li>
-    <li>Configurable Kinetic Energy simulation for both slope and erg modes</li>
-    <li>Includes vlc 3.0.8 for Windows, Linux and macOS</li>
-    <li>Video Overlay Widgets for Linux</li>
-    <li>Elevation Profile Overlay in Video (Windows and Linux)</li>
-    <li>Live Map Overlay in Video (Windows and Linux)</li>
-    <li>Overlay Layouts selector in Video (Windows and Linux)</li>
-    <li>Text cues on bottom bar from ERG, ZWO and JSON files</li>
-    <li>Custom Virtual Power curve for dumb trainers including inertial mass</li>
-    <li>GoldenCheetah JSON for workout and video sync</li>
-    <li>Simulated Hypoxia</li>
-    <li>Optional start countdown</li>
-    <li>Automatically select media and video sync for workouts with the same name</li>
-    <li>Save workout name as Route metadata</li>
-    <li>Enable standard key bindings for Pause/Continue and Stop while training</li>
-    <li>Enable Auto-hide bottom bar and hide sidebar when train mode starts</li>
-    <li>Changed RR and VO2 recording to avoid data loss</li>
-</ol>
+                    <h2>Advanced Analytics</h2>
+                    <ol>
+                        <li>R and Python Chart Plot to Qt - Native interactive charting from R and Python</li>
+                        <li>Local python 3.7 runtime, no need to install separately</li>
+                        <li>User expression language enhanced - rich support for vectors and modelling</li>
+                        <li>Upload and Download User Metrics to the cloud DB</li>
+                    </ol>
 
-<h2><b>Embedding</b></h2>
-<ol>
-    <li>R versions supported are from 3.4</li>
-    <li>Python version supported is 3.7 with SIP 4.19.8</li>
-</ol>
+                    <h2>Improved Multiple Athlete Support</h2>
+                    <ol>
+                        <li>New Athlete View to manage multiple athletes</li>
+                        <li>Separate dialogs for general options and athlete specific settings</li>
+                        <li>Preferences option to start with last opened athlete or choose an athlete dialog</li>
+                        <li>Configurable Aerobic Threshold HR/Power/Pace for Polarized 3 Zones analysis</li>
+                        <li>Use an existing athlete as template to create a new one</li>
+                    </ol>
 
-<h2><b>Language support</b></h2>
-<ol>
-    <li>Export to CSV with UTF8 and ISO date format for broader support of translations</li>
-</ol>
+                    <h2>Devices</h2>
+                    <ol>
+                        <li>ErgoFit bike support</li>
+                        <li>VMPro V02 measurement</li>
+                        <li>Bluetooth BTLE support for Windows 10</li>
+                        <li>Bluetooth FTMS support</li>
+                        <li>Daum serial devices (Vital and ErgoBike)</li>
+                        <li>Wahoo Kickr (Core) control vía BTLE</li>
+                        <li>Tacx ANT+ over BTLE for both, erg and slope mode, control</li>
+                        <li>Kurt Kinetic Inride and SmartControl over BTLE</li>
+                    </ol>
 
-<h2><b>Removed redundant or broken features</b></h2>
-<ol>
-    <li>Deprecate Activity and Trends Summary Charts</li>
-    <li>Diary view removed to be totally rewritten in version 3.7</li>
-</ol>
+                    <h2>Cloud, Data processing & File Formats</h2>
+                    <ol>
+                        <li>Batch processing dialog to update files en masse</li>
+                        <li>Configurable zones for any sport (including better support for rowing)</li>
+                        <li>Configurable Time Dependent Measures with CSV import, including Nutrition as an example</li>
+                        <li>GPS and Altitude Smoothing</li>
+                        <li>TTS file type import</li>
+                        <li>Upload manual activities to Strava</li>
+                        <li>Better handling of Laps and swims from Strava downloads</li>
+                        <li>Multisport FIT file support</li>
+                        <li>Import HR during lap swims from FIT files</li>
+                        <li>Ergo Planet Movie (EPM) file import</li>
+                        <li>Updated download from Withings incl. new API</li>
+                        <li>Import serial number and battery status for sensors from FIT files</li>
+                        <li>Updated Ride with GPS upload using API v2</li>
+                        <li>Azum training platform integration</li>
+                    </ol>
 
-<h2><b>Critical Bug Fixes</b></h2>
-<ol>
-    <li>1434 changes committed and 397 bugs fixed since version 3.5</li>
-    <li>Metric refresh deadlock and CPU hog resolved</li>
-    <li>Fixed data filter memory leaks</li>
-    <li>Withings authorization issues resolved</li>
-    <li>Sportracks download crashes resolved</li>
-    <li>VLC video freezing resolved</li>
-    <li>Python API crash resolved</li>
-    <li>Estimate distance crash resolved</li>
-    <li>Startup crash when no power zones resolved</li>
-    <li>Metric refresh crash resolved</li>
-    <li>XData copy crash resolved</li>
-    <li>L/R balance support in ANT+ and FIT files resolved</li>
-    <li>Improved segment matching</li>
-    <li>JQuery removed entirely due to security alert</li>
-</ol>
+                    <h2>Train</h2>
+                    <ol>
+                        <li>Perspectives for Erg, Slope, Map, Video and Editor</li>
+                        <li>Live Map Chart with route preview and configurable automatic zoom</li>
+                        <li>Next/Previous Lap marker navigation in bottom bar</li>
+                        <li>Configurable Kinetic Energy simulation for both slope and erg modes</li>
+                        <li>Includes vlc 3.0.8 for Windows, Linux and macOS</li>
+                        <li>Video Overlay Widgets for Linux</li>
+                        <li>Elevation Profile Overlay in Video (Windows and Linux)</li>
+                        <li>Live Map Overlay in Video (Windows and Linux)</li>
+                        <li>Overlay Layouts selector in Video (Windows and Linux)</li>
+                        <li>Text cues on bottom bar from ERG, ZWO and JSON files</li>
+                        <li>Custom Virtual Power curve for dumb trainers including inertial mass</li>
+                        <li>GoldenCheetah JSON for workout and video sync</li>
+                        <li>Simulated Hypoxia</li>
+                        <li>Optional start countdown</li>
+                        <li>Automatically select media and video sync for workouts with the same name</li>
+                        <li>Save workout name as Route metadata</li>
+                        <li>Enable standard key bindings for Pause/Continue and Stop while training</li>
+                        <li>Enable Auto-hide bottom bar and hide sidebar when train mode starts</li>
+                        <li>Changed RR and VO2 recording to avoid data loss</li>
+                    </ol>
 
-</body>
+                    <h2>Embedding</h2>
+                    <ol>
+                        <li>R versions supported are from 3.4</li>
+                        <li>Python version supported is 3.7 with SIP 4.19.8</li>
+                    </ol>
+
+                    <h2>Language support</h2>
+                    <ol>
+                        <li>Export to CSV with UTF8 and ISO date format for broader support of translations</li>
+                    </ol>
+
+                    <h2>Removed redundant or broken features</h2>
+                    <ol>
+                        <li>Deprecate Activity and Trends Summary Charts</li>
+                        <li>Diary view removed to be totally rewritten in version 3.7</li>
+                    </ol>
+
+                    <h2>Critical Bug Fixes</h2>
+                    <ol>
+                        <li>1434 changes committed and 397 bugs fixed since version 3.5</li>
+                        <li>Metric refresh deadlock and CPU hog resolved</li>
+                        <li>Fixed data filter memory leaks</li>
+                        <li>Withings authorization issues resolved</li>
+                        <li>Sportracks download crashes resolved</li>
+                        <li>VLC video freezing resolved</li>
+                        <li>Python API crash resolved</li>
+                        <li>Estimate distance crash resolved</li>
+                        <li>Startup crash when no power zones resolved</li>
+                        <li>Metric refresh crash resolved</li>
+                        <li>XData copy crash resolved</li>
+                        <li>L/R balance support in ANT+ and FIT files resolved</li>
+                        <li>Improved segment matching</li>
+                        <li>JQuery removed entirely due to security alert</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-footer" class="py-3  mx-md-3 gold">
+        <div class="row col-md p-l-5 mx-auto">
+            <div class="col-12 col-md text-center">
+                <a class="py-2" href="https://www.goldencheetah.org">
+                    <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+                </a>
+                <small class="d-block mb-3 text-muted since">Since 2006</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">                        
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe></li>
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Social</h5>
+                <ul class="list-unstyled text-small text-muted">            
+                    <li class="follow-btn"><a href="https://twitter.com/goldencheetah" class="twitter-follow-button text-muted" data-link-color="#0069D6" data-show-count="true">Follow @goldencheetah</a></li>
+                    <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button text-muted" data-url="http://goldencheetah.org" data-count="horizontal" data-via="goldencheetah" data-related="goldencheetah">Tweet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/holder.min.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/goldencheetah.js"></script>
+    <script>
+        window.twttr = (function (d,s,id) {
+                        var t, js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+                        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+                        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+                        }(document, "script", "twitter-wjs"));
+    </script>
+  </body>
 </html>
