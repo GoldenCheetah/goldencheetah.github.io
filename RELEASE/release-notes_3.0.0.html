@@ -1,51 +1,86 @@
-<html>
-<body>
-<p>
-New Features and Enhancements
-  <ul>
-  <li>See the full log below.</li>
-  <li>See the <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-Release.pdf?raw=true">Release Notes</a> PDF on GitHub.</li>
-  <li>A PDF <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-Manual.pdf?raw=true">User's Manual</a></li>
-  <li>A PDF <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-FAQ.pdf?raw=true">Frequently Asked Questions (FAQ)</a></li>
- <li>Welcome Screens to help setup the program.</li>
-  </ul>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<p>
-Internationalisation
-  <ul>
-  <li>German (Tilman Schmiedeberg)</li>
-  <li>Italian (Marco Piccirilli)</li>
-  <li>Japanese (Okano Takayoshi)</li>
-  <li>Spanish (Alejandro Martinez)</li>
-  </ul>
-</p>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
 
-<p>
-Development Builds
-  <ul>
-  <li>Gareth Coco</li>
-  <li>Jamie Kimberley</li>
-  </ul>
-</p>
+        <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
 
-<p>
-Full Change Log
-</p>
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/goldencheetah.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <nav id="section-navbar" class="site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 logo mx-auto" href="#top">
+                <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+            </a>
+            <a class="nav-button position-absolute mr-0 py-4 mt-2 d-md-inline-block small font-weight-bold" href="https://www.goldencheetah.org">< Back to Home page</a>
+        </div>
+    </nav>
+
+    <div id="section-top" class="p-3 p-md-5 m-md-3 bg-light blue">
+        <div class="col-md p-l-5 mt-0 mx-auto">
+            <h1 class="font-weight-bold mb-1">GoldenCheetah v3.0.0</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="bg-light text-left overflow-hidden">
+
+                        <h3>New Features and Enhancements</h3>                        
+                        <ul>
+                          <li>See the full log below.</li>
+                          <li>See the <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-Release.pdf?raw=true">Release Notes</a> PDF on GitHub.</li>
+                          <li>A PDF <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-Manual.pdf?raw=true">User's Manual</a></li>
+                          <li>A PDF <a href="https://github.com/GoldenCheetah/GoldenCheetah/blob/master/doc/user/GC3-FAQ.pdf?raw=true">Frequently Asked Questions (FAQ)</a></li>
+                          <li>Welcome Screens to help setup the program.</li>
+                        </ul>
+                        
+                        <h3>Internationalisation</h3>
+                        <ul>
+                          <li>German (Tilman Schmiedeberg)</li>
+                          <li>Italian (Marco Piccirilli)</li>
+                          <li>Japanese (Okano Takayoshi)</li>
+                          <li>Spanish (Alejandro Martinez)</li>
+                        </ul>
+                        
+                        <h3>Development Builds</h3>
+                        <ul>
+                          <li>Gareth Coco</li>
+                          <li>Jamie Kimberley</li>
+                        </ul>
+                        
+                        <h3>Full Change Log</h3>
 <pre>
 Alejandro Martinez (49):
       Change Pace metric to follow metric/imperial units as configured
       Automatic CdA and Crr Estimation in Aerolab
       Add es and pt translation files set lang default according to system default
-      Enable metrics translations     The code setting metric names and units was moved from constructors to     an initialize method, to be called after translator initialization.     English Name is preserved as InternalName for metadata.xlm compatibility     in metric override.     Q_DECLARE_TR_FUNCTIONS(class-name) macro is used to set tr() context     when class-name is not QObject sub-class.
+      Enable metrics translations     The code setting metric names and units was moved from constructors to 
+            an initialize method, to be called after translator initialization.     
+            English Name is preserved as InternalName for metadata.xlm compatibility in metric override.     
+            Q_DECLARE_TR_FUNCTIONS(class-name) macro is used to set tr() context when class-name is not QObject sub-class.
       Enable translation on LeftRight metric
-      Enable Metadata translation     This patch keeps the original english name of SpecialFields and SpecialTabs     as internalName, to preserve compatibility, while it uses a translated     displayName for user interfase in other languages.
+      Enable Metadata translation     This patch keeps the original english name of SpecialFields and SpecialTabs     
+            as internalName, to preserve compatibility, while it uses a translated    
+            displayName for user interfase in other languages.
       Enable translations in RideSummary     Includes default zone descriptions
       Enable AllPlot and Aerolab translations     Also update spanish translation
       Enable PerfPlot and PfPvPlot translations     Also includes a minor change in LTMSidebar
-      Enable LTM Translations     Includes translation of default chart names, these     should be in sync with those defined in charts.xml
+      Enable LTM Translations       Includes translation of default chart names, these 
+            should be in sync with those defined in charts.xml
       Enable DataProcessor Translation     Also includes download instructions translation
-      Enable Colors translations     Includes loading translations for system dialogs and     using default units according to system settings
+      Enable Colors translations     Includes loading translations for system dialogs and     
+            using default units according to system settings
       Enable Rho and Twitter translations
       Enable 3d chart translations
       Enable HomeWindow Translations
@@ -54,10 +89,12 @@ Alejandro Martinez (49):
       Enable Diary Translations
       Enable chart names translation
       Enable RideNavigator Translation
-      Enable RideFile seriesName translation     Also changed all references to QObject::tr for a version with the proper context
+      Enable RideFile seriesName translation    
+            Also changed all references to QObject::tr for a version with the proper context
       Translate axis labels LTMPlot     Fixes #29
       Enable Measures Translation     For use in LTM metrics list
-      Fix RideNavigator Translation     column names from xml file need to be translated to match translated headings,     other posibility would be to match before translation, but this option needed     fewer changes.
+      Fix RideNavigator Translation     column names from xml file need to be translated to match translated headings,    
+            other posibility would be to match before translation, but this option needed     fewer changes.
       Options Toolbar & Keywords Translations
       Fix minor translations related issues
       Enable fieldChooser and field types translation
@@ -68,12 +105,15 @@ Alejandro Martinez (49):
       Enabled translation of supported devices legend in DeviceTypes.cpp
       Enabled ScatterPlot axis legend translation
       Merge branch 'master' of https://github.com/GoldenCheetah/GoldenCheetah
-      Enabled translation of Search and Group By     Update spanish translation     Update italian translation (by Marco Piccirilli)
+      Enabled translation of Search and Group By     Update spanish translation     
+            Update italian translation (by Marco Piccirilli)
       Merge branch 'master' of https://github.com/GoldenCheetah/GoldenCheetah
       Merge branch 'master' of https://github.com/GoldenCheetah/GoldenCheetah
-      Enabled translation of Season and Event details     Updated spanish translation     Updated german translation (by Tilman Schmiedeberg)
+      Enabled translation of Season and Event details     Updated spanish translation     
+            Updated german translation (by Tilman Schmiedeberg)
       UI Nits: enlarge Aerolab Crr box to fit the allowed 6 decimal places
-      Enabled translation of BatchExportDialog     Updated Spanish Translation     Updated Italian Translation (by Marco Piccirilli)
+      Enabled translation of BatchExportDialog     Updated Spanish Translation     
+            Updated Italian Translation (by Marco Piccirilli)
       Enabled translation of GroupBy labels and formats in RideNavigator
       Use Distance as a PMC metric     Fixes #570
       Enabled progress translation in PowerTap download     Updated spanish translation
@@ -331,7 +371,8 @@ Gareth Coco (29):
 Greg Lonnon (10):
       kJoules, BikeScore, xpower displayed, fixed length speed/avg speed, refactored grid layout.
       Computrainer Workout Wizard
-      realtime mode: during a workout, if the +/- keys are hit during a workout,     then the rider is able to control the controlller manually.
+      realtime mode: during a workout, if the +/- keys are hit during a workout,     
+            then the rider is able to control the controlller manually.
       workoutwizard: fixed the LAP feature in mrc and erg files
       Added Map and StreetView charts to the TrainTool.
       added reset window layout to all the HomeWindows.
@@ -344,8 +385,10 @@ Ilja Booij (1):
       Fix Heartrate support for Tacx Fortius
 
 Jaime (28):
-      Added CNUMOFCFGCOLORS macro to define the number of configurable metric colors are available     Added macro entries for Load, TSS and BikeScore
-      Added use of CNUMOFCFGCOLORS macro in ColorList and DefaultColorList arrays     Added Load, TSS and BikeScore support in setupColors()
+      Added CNUMOFCFGCOLORS macro to define the number of configurable metric colors are available     
+            Added macro entries for Load, TSS and BikeScore
+      Added use of CNUMOFCFGCOLORS macro in ColorList and DefaultColorList arrays     
+            Added Load, TSS and BikeScore support in setupColors()
       Added support for configurable colors for Load, TSS and BikeScore
       Added CRIDEPLOTXAXIS and CRIDEPLOTYAXIS for ErgFilePlot axis color configuration
       Added Ride Plot X and Y Axis color configuration.  Default to blue and red.
@@ -358,14 +401,19 @@ Jaime (28):
       In guiUpdate(), fixed an issue with updating now to current time so that it is updated about every 1 second.
       Merge remote-tracking branch 'upstream/master'
       Changes to fix CT calibration issues with the real time Train plot.
-      Logic changes to enable real time plotting to resume properly after calibration.     Minor cosmetic fixes of missing #defines for media support
-      Move initialization of curveTitle to CpintPlot constructor from calculate() so the Cp title doesn't get overriden to blank after its first showing.
-      Fixed side bar to properly toggle the Hide/Show state when switching modes     Minor fixes to #defines for Q_OS_MAC on side/scopebar
+      Logic changes to enable real time plotting to resume properly after calibration.     
+            Minor cosmetic fixes of missing #defines for media support
+      Move initialization of curveTitle to CpintPlot constructor from calculate() 
+            so the Cp title doesn't get overriden to blank after its first showing.
+      Fixed side bar to properly toggle the Hide/Show state when switching modes     
+            Minor fixes to #defines for Q_OS_MAC on side/scopebar
       Fix thread warning exit realtime
       Added removal of double quotes from Racermate TXT data files
       Racermate test TXT file with double quoted data
-      Noticed that slope was not being initialized to 0.0, so reworked the constructor ro initialize the variables in the order they are listed in RealtimeData.h
-      Fixes in CT support to ensure Gradient/Slope is being defaulted and updated properly between the CTConroller and TrainTool.     Fix to preselect ERG mode in workoutTree.
+      Noticed that slope was not being initialized to 0.0, 
+            so reworked the constructor ro initialize the variables in the order they are listed in RealtimeData.h
+      Fixes in CT support to ensure Gradient/Slope is being defaulted and updated properly between the CTConroller and TrainTool.
+            Fix to preselect ERG mode in workoutTree.
       Restore load/gradient after done with calibration
       Mac Buttons Icon Corruption
       Icon Toolbar Memory Management
@@ -405,7 +453,9 @@ Magnus Gille (3):
       Fixed a missing -1 to make non motoactv files parsable again
 
 Marc Boudreau (3):
-      Fix:     - incorrect RegEx to read some CRS files     - all files were assumed to be metric - (UNITS = ENGLISH) now converts     - scaling adjusted to not clip the top when some graphs were longer
+      Fix:  - incorrect RegEx to read some CRS files
+            - all files were assumed to be metric - (UNITS = ENGLISH) now converts
+            - scaling adjusted to not clip the top when some graphs were longer
       Notes (<cmt/>) from PWX files not added as RideFile tags...
       Notes (<cmt/>) from PWX files not added as RideFile tags...
 
@@ -1801,7 +1851,8 @@ Ron Alford (2):
       Changing TCX export to convert to UTC time
 
 Steven Gribble (1):
-      added a new air density (rho) estimator dialog box, hooked it into the Tools menu, and updated src.pro to add compilation dependencies for it
+      added a new air density (rho) estimator dialog box, hooked it into the Tools menu,
+            and updated src.pro to add compilation dependencies for it
 
 Tilman Schmiedeberg (2):
       Initial v3 German Translation
@@ -1824,7 +1875,8 @@ dhague (1):
 
 g3rg (2):
       Fixed tab order of fields on New Cyclist Dialog
-      #381 Prevent statistics from refreshing for each file saved on close, and just run for the last file. Also covers #506 and #656 which are duplicates.
+      #381 Prevent statistics from refreshing for each file saved on close, and just run for the last file.
+            Also covers #506 and #656 which are duplicates.
 
 gcoco (23):
       Merge pull request #12 from glonnon/strava_date_fix
@@ -1854,6 +1906,53 @@ gcoco (23):
 unknown (1):
       Add error reporting to Estimate CdA and Crr
 </pre>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</body>
+    <div id="section-footer" class="py-3  mx-md-3 gold">
+        <div class="row col-md p-l-5 mx-auto">
+            <div class="col-12 col-md text-center">
+                <a class="py-2" href="https://www.goldencheetah.org">
+                    <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+                </a>
+                <small class="d-block mb-3 text-muted since">Since 2006</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">                        
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe></li>
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Social</h5>
+                <ul class="list-unstyled text-small text-muted">            
+                    <li class="follow-btn"><a href="https://twitter.com/goldencheetah" class="twitter-follow-button text-muted" data-link-color="#0069D6" data-show-count="true">Follow @goldencheetah</a></li>
+                    <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button text-muted" data-url="http://goldencheetah.org" data-count="horizontal" data-via="goldencheetah" data-related="goldencheetah">Tweet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/holder.min.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/goldencheetah.js"></script>
+    <script>
+        window.twttr = (function (d,s,id) {
+                        var t, js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+                        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+                        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+                        }(document, "script", "twitter-wjs"));
+    </script>
+  </body>
 </html>
