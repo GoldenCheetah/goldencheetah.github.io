@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+        <title>Golden Cheetah: Cycling Performance Software for Linux, Mac OS X, and Windows</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/goldencheetah.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <nav id="section-navbar" class="site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 logo mx-auto" href="#top">
+                <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+            </a>
+            <a class="nav-button position-absolute mr-0 py-4 mt-2 d-md-inline-block small font-weight-bold" href="https://www.goldencheetah.org">< Back to Home page</a>
+        </div>
+    </nav>
+
+    <div id="section-top" class="p-3 p-md-5 m-md-3 bg-light blue">
+        <div class="col-md p-l-5 mt-0 mx-auto">
+            <h1 class="font-weight-bold mb-1">GoldenCheetah v3.7</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="bg-light text-left overflow-hidden">
+                    <p>We are proud to announce the release of version 3.7 of GoldenCheetah.</p>
+                    <p>A maintenance release focused on base code migration to Qt 6 preserving Qt 5 compatibility, including some long awaited features s.t. filtering and classification of workouts, selective BTLE sensor pairing, drag-n-drop of activity images, and semi-automatic CP detection for power zones, settings and config harmonization and a lot of small improvements and bug fixes for a better user experience.</p>
+                    <p><b>Summary of changes from v3.6 release</b></p>
+                    
+                    <h2>GUI</h2>
+                    <ol>
+                      <li>New graphical splash screen with version and load progress indications.</li>
+                      <li>Ctrl+q for Quit on Linux, command+Q on macOS and Alt+F4 on Windows.</li>
+                      <li>Drag and Drop Images onto a ride, Images gallery Python chart available for download from CloudDB.</li>
+                      <li>Main Window gets drag/drop from Overview</li>
+                      <li>Context help for Create/Edit User Metrics</li>
+                      <li>Batch Processing now includes metadata update</li>
+                      <li>Improved search/filter box drop down menu icon and color theme fixes</li>
+                      <li>Updated Zones config dialogs with in-place edition</li>
+                      <li>Updated Athlete config and new athlete dialogs</li>
+                      <li>Updated global config dialogs</li>
+                      <li>Improved Data Processors config with automatic-only setting</li>
+                      <li>Edit menu renamed as Process honors automatic-only setting</li>
+                    </ol>
+
+                    <h2>CHARTS</h2>
+                    <ol>
+                        <li>Overview Chart - Enhanced drag and drop item placement with preview</li>
+                        <li>Overview Chart - Edit content button for metadata tiles</li>
+                        <li>Compare mode for Map chart</li>
+                        <li>Configurable grayscale filter for Map chart</li>
+                        <li>Ignore zeros option for curves in Metrics Trends charts (this makes the charts saved by this version incompatible with previous ones)</li>
+                        <li>Zoom & Pan for the Performance chart using +mouse wheel and mouse wheel click and drag</li>
+                        <li>PfPv Plot (QA) and Scatter Plot (2d) - allow vertical scales up to 2500N</li>
+                        <li>Fixed Weekly tiles in default Trends layouts</li>
+                        <li>Map chart - Added interactivity to the Smallplot</li>
+                        <li>Better user experience when drawing segments on the map</li>
+                        <li>Python Chart Editor Cosmetics</li>
+                        <li>Enabled old Calendar and Navigator charts for Trends</li>
+                        <li>Table tile in Overview chart - colorize scalar values</li>
+                        <li>Enable Performance Tests for CV charts</li>
+                    </ol>
+
+                    <h2>FILE FORMATS</h2>
+                    <ol>
+                        <li>Support for the new FIT structure used by latest Garmin units, fixes the no-laps problem, but still doesn’t work with multisport files.</li>
+                        <li>Read and write XData developer fields to FIT files, previously imported developer data is now preserved on FIT export.</li>
+                        <li>Generic Support for Session and Lap in FIT files</li>
+                        <li>Decode cyclist position from FIT files</li>
+                        <li>GPX parser - support ns3 TrackPointExtension name and uses speed data when available</li>
+                        <li>Consolidate consecutive rest lengths in a single interval for lap swim fit files</li>
+                        <li>Fix lap swim allows to filter min rest lengths</li>
+                        <li>Update FITmetadata.json to FIT SDK v21.158</li>
+                    </ol>
+
+                    <h2>METRICS</h2>
+                    <ol>
+                        <li>Semi automatic creation of ranges for power zones</li>
+                        <li>Enable Pace metric for Walking (this will trigger a full metric re-computation o the first start)</li>
+                        <li>Rename fatigue zones for consistency</li>
+                        <li>DataFilter - isAero</li>
+                        <li>Interval Metadata</li>
+                        <li>Datafilter xdataseries(), xdataunits() and xdatavalues()</li>
+                        <li>User defined relative date ranges in Trends</li>
+                        <li>Swim Stroke (0 - rest, 1 - free, 2 - back, 3 - breast, 4 - fly, 5 - drill, 6 - mixed)</li>
+                    </ol>
+
+                    <h2>TRAIN</h2>
+                    <ol>
+                        <li>New icons for the bottom bar honor light and dark themes</li>
+                        <li>Improved the selection of workouts using filters in the toolbar with named workout filters</li>
+                        <li>Added Bluetooth pairing to the device wizard and BTLE support on macOS versions from 12.x</li>
+                        <li>Workout Editor supports MRC flavored qwkcode (Watts as percentages of CP)</li>
+                        <li>Download Strava Routes as Workouts</li>
+                        <li>Download workouts from TrainerDay (previously ErgDB) using the query API with duration and dominantzone operators.</li>
+                        <li>New zoomed elevation widget for slope/distance workouts with video</li>
+                        <li>New zoomed elevation chart for slope/distance workout without video</li>
+                        <li>Option for coalescing neighboring sections with the same watts in ERG mode workouts</li>
+                        <li>Workout Plot - realtime curves honor FFWD/RWND and lap F/B</li>
+                        <li>Coloring by powerzones in ErgFilePlot</li>
+                        <li>Added support for old Daum devices before 2001</li>
+                        <li>Workout editor: preferences are persistent between sessions and line width honors appearance settings</li>
+                        <li>Cycling dynamics in train mode</li>
+                        <li>Add tempe ANT+ sensor support</li>
+                        <li>Add of CoreTemp sensor support</li>
+                        <li>Add Zoom property to Live map chart</li>
+                        <li>Enable VideoSync and Overlay Widgets for QT6 Video Window</li>
+                    </ol>
+
+                    <h2>CLOUD</h2>
+                    <ol>
+                        <li>CloudDB - Fallback to local cache when server is not available</li>
+                        <li>Adapt CloudServiceSyncDialog with service capabilities</li>
+                        <li>Athlete level WebEngineProfile for cookies and storage, disabled for OAuth workflow.</li>
+                    </ol>
+
+                    <h2>Python API</h2>
+                    <ol>
+                        <li>GC.deleteXDataSeries(xdata, series) to remove existing XData series</li>
+                        <li>GC.deleteXData(xdata) to remove existing XData</li>
+                    </ol>
+
+                    <h2>TRANSLATIONS</h2>
+                    <ol>
+                        <li>Updated German translation</li>
+                        <li>Updated Spanish translation</li>
+                        <li>Updated French translation</li>
+                        <li>Updated Italian translation</li>
+                    </ol>
+
+                    <h2>BUG FIXES</h2>
+                    <ol>
+                        <li>Fix crash on invalid perspective filter</li>
+                        <li>Fixed rounding error on loading and saving erg files</li>
+                        <li>Enable Multiple custom power curves for virtual power</li>
+                        <li>Fix memory leak in Split Activity Wizard</li>
+                        <li>Bluetooth FTMS fix to get device speed</li>
+                        <li>Cursor in text workout editor was invisible</li>
+                        <li>Fix crash on metadata config</li>
+                        <li>Fix some non-translatable strings and update ts files</li>
+                        <li>Fix lap data auto-reset in slope workouts</li>
+                        <li>Fix broken workout directory check for the first start</li>
+                        <li>Fix shortcuts not available due to translations</li>
+                        <li>Fix issues after perspective switch</li>
+                        <li>Ignore dot folders on athlete open/backup/delete</li>
+                        <li>Fix imperial units labels in AeroLab</li>
+                        <li>Fix Ride Cache remove 1 sec intervals</li>
+                        <li>Fix intervals in Compare Pane are 1 sample short</li>
+                        <li>Avoid crash when users try to create a virtual power curve with a single point</li>
+                    </ol>
+
+                    <h2>DEPRECATED FEATURES</h2>
+                    <ol>
+                        <li>Deprecate Today's Plan integration</li>
+                        <li>Deprecate export to KML files</li>
+                    </ol>
+
+                    <h2>TECHNICAL CHANGES</h2>
+                    <ol>
+                        <li>Upgraded Qwt to 6.4 (branch: qwt-multiaxes)</li>
+                        <li>Upgrade Travis-ci builds to macOS 12.6 with Qt5.15</li>
+                        <li>Upgrade Travis-ci Linux version to Ubuntu 22.04, AppImage now works with fuse3</li>
+                        <li>Qt6 and Qt6 video support up to latest Qt 6.8.3, updated WebEngine embedded browser fixes login issues on external websites s.t. Garmin Connect and Strava.</li>
+                    </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-footer" class="py-3  mx-md-3 gold">
+        <div class="row col-md p-l-5 mx-auto">
+            <div class="col-12 col-md text-center">
+                <a class="py-2" href="https://www.goldencheetah.org">
+                    <img src="../img/logo_text.svg" alt="GoldenCheetah logo" width="130" height="64" class="d-block mx-auto">
+                </a>
+                <small class="d-block mb-3 text-muted since">Since 2006</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">                        
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe></li>
+                    <li><iframe class="github-btn border-0" src="https://ghbtns.com/github-btn.html?user=goldencheetah&amp;repo=goldencheetah&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Social</h5>
+                <ul class="list-unstyled text-small text-muted">            
+                    <li class="follow-btn"><a href="https://twitter.com/goldencheetah" class="twitter-follow-button text-muted" data-link-color="#0069D6" data-show-count="true">Follow @goldencheetah</a></li>
+                    <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button text-muted" data-url="http://goldencheetah.org" data-count="horizontal" data-via="goldencheetah" data-related="goldencheetah">Tweet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/holder.min.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/goldencheetah.js"></script>
+    <script>
+        window.twttr = (function (d,s,id) {
+                        var t, js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+                        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+                        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+                        }(document, "script", "twitter-wjs"));
+    </script>
+  </body>
+</html>
